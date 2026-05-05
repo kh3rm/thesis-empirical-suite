@@ -1,7 +1,8 @@
 # Thesis Empirical Suite
 
 **Companion repository for the thesis**
-*Reliability in Event-Driven Design: How Correctness Boundaries Shape Process-Handling Choices and Recovery Behaviour*
+**[*Reliability in Event-Driven Design*](thesis_basis/thesis.pdf)**  
+*How Correctness Boundaries Shape Process-Handling Choices and Recovery Behaviour*
 
 This repository contains the canonical runnable suites, the frozen thesis results, the thesis-used figures, and the thesis PDF.
 It provides the compact empirical basis for the thesis: run the suites, inspect the aggregate CSVs, and compare fresh outputs with the frozen results.
