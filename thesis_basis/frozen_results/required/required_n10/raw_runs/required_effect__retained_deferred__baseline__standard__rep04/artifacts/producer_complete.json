@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "produced_event_count": 1000,
+  "produced_case_count": 1000,
+  "duration_seconds": 6.638979,
+  "delivery_mode": "retained",
+  "scenario_seed": 7935,
+  "skewed_tail_delayed_case_count": 0,
+  "boundary": "required_effect",
+  "deadline_window_seconds": 0.0,
+  "duplicate_case_count": 0,
+  "duplicate_emissions": 0,
+  "omitted_case_count": 0,
+  "logical_case_count": 1000,
+  "updates_per_entity": 1,
+  "state_obsolete_replay_fraction": 0.0
+}

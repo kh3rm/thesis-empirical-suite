@@ -1,0 +1,2 @@
+2026-04-20T05:20:20 producer starting delivery_mode=transient event_count=1000 disturbance=degradation start_delay=1.0
+2026-04-20T05:20:27 producer finished produced=1000

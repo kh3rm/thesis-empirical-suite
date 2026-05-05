@@ -1,0 +1,34 @@
+[
+  {
+    "scenario_id": "state_non_regression__retained_immediate__backlog_forward_resume__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "state_non_regression__retained_immediate__backlog_shock__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "state_non_regression__transient_immediate__backlog_forward_resume__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "state_non_regression__transient_immediate__backlog_shock__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  }
+]

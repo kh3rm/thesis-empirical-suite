@@ -1,0 +1,123 @@
+{
+  "overall_status": "pass",
+  "thresholds": {
+    "min_replayable_gap_delta": 20.0,
+    "max_retained_gap_delta": 10.0,
+    "min_duplicate_relief_ratio": 0.7,
+    "max_source_omission_spread": 5.0,
+    "min_source_omission_signal": 20.0,
+    "min_deferred_lag_delta_seconds": 0.15,
+    "min_deferred_recon_passes": 1.0,
+    "min_deferred_recon_delta": 3.0,
+    "min_deferred_cost_pass_rows": 2
+  },
+  "claims": {
+    "C1_replay_recovers_handling_gap_omissions": {
+      "status": "pass",
+      "expected_signature": "transient misses during handling gap remain unattained, while retained variants recover by replay"
+    },
+    "C2_deferred_consolidates_duplicate_side_effects": {
+      "status": "pass",
+      "expected_signature": "retained_deferred strongly reduces duplicate side-effect execution by coalescing before settlement"
+    },
+    "C3_source_omission_is_outside_replay_scope": {
+      "status": "pass",
+      "expected_signature": "when events are never emitted, replay-capable retention does not improve unattained outcomes"
+    },
+    "C4_deferred_adds_settlement_cost": {
+      "status": "pass",
+      "expected_signature": "retained_deferred increases settlement lag/reconciliation work relative to retained_immediate"
+    }
+  },
+  "handling_gap_rows": [
+    {
+      "severity": "standard",
+      "transient_unattained": 598.8,
+      "retained_immediate_unattained": 0.0,
+      "retained_deferred_unattained": 0.0,
+      "transient_minus_retained_immediate": 598.8,
+      "transient_minus_retained_deferred": 598.8,
+      "retained_gap_abs": 0.0
+    },
+    {
+      "severity": "extreme",
+      "transient_unattained": 871.7,
+      "retained_immediate_unattained": 0.0,
+      "retained_deferred_unattained": 0.0,
+      "transient_minus_retained_immediate": 871.7,
+      "transient_minus_retained_deferred": 871.7,
+      "retained_gap_abs": 0.0
+    }
+  ],
+  "duplicate_rows": [
+    {
+      "severity": "standard",
+      "best_immediate_duplicate_side_effect_execution_count": 800.0,
+      "deferred_duplicate_side_effect_execution_count": 15.2,
+      "deferred_correction_rewrite_count": 784.8,
+      "relief_absolute": 784.8,
+      "relief_ratio": 0.981
+    },
+    {
+      "severity": "extreme",
+      "best_immediate_duplicate_side_effect_execution_count": 1400.0,
+      "deferred_duplicate_side_effect_execution_count": 24.6,
+      "deferred_correction_rewrite_count": 1375.4,
+      "relief_absolute": 1375.4,
+      "relief_ratio": 0.982429
+    }
+  ],
+  "source_omission_rows": [
+    {
+      "severity": "standard",
+      "transient_unattained": 200.1,
+      "retained_immediate_unattained": 200.0,
+      "retained_deferred_unattained": 200.0,
+      "spread_unattained": 0.1,
+      "signal_unattained": 200.1
+    }
+  ],
+  "deferred_cost_rows": [
+    {
+      "family": "duplicate_pressure",
+      "severity": "standard",
+      "retained_immediate_lag_seconds": 0.0,
+      "retained_deferred_lag_seconds": 0.104938,
+      "lag_delta_seconds": 0.104938,
+      "retained_immediate_reconciliation_pass_count": 0.0,
+      "retained_deferred_reconciliation_pass_count": 33.2,
+      "reconciliation_delta": 33.2
+    },
+    {
+      "family": "duplicate_pressure",
+      "severity": "extreme",
+      "retained_immediate_lag_seconds": 0.0,
+      "retained_deferred_lag_seconds": 0.060145,
+      "lag_delta_seconds": 0.060145,
+      "retained_immediate_reconciliation_pass_count": 0.0,
+      "retained_deferred_reconciliation_pass_count": 37.2,
+      "reconciliation_delta": 37.2
+    },
+    {
+      "family": "handling_gap_replayable",
+      "severity": "standard",
+      "retained_immediate_lag_seconds": 0.0,
+      "retained_deferred_lag_seconds": 0.111538,
+      "lag_delta_seconds": 0.111538,
+      "retained_immediate_reconciliation_pass_count": 0.0,
+      "retained_deferred_reconciliation_pass_count": 10.1,
+      "reconciliation_delta": 10.1
+    },
+    {
+      "family": "handling_gap_replayable",
+      "severity": "extreme",
+      "retained_immediate_lag_seconds": 0.0,
+      "retained_deferred_lag_seconds": 0.141366,
+      "lag_delta_seconds": 0.141366,
+      "retained_immediate_reconciliation_pass_count": 0.0,
+      "retained_deferred_reconciliation_pass_count": 5.1,
+      "reconciliation_delta": 5.1
+    }
+  ],
+  "deferred_cost_pass_rows": 4
+}

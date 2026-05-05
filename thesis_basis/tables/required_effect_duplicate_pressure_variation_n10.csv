@@ -1,0 +1,5 @@
+scenario_id,configuration,severity,repeat_count,duplicate_side_effect_execution_count_mean,duplicate_side_effect_execution_count_std,duplicate_side_effect_execution_count_median,correction_rewrite_count_mean,correction_rewrite_count_std,correction_rewrite_count_median,reconciliation_pass_count_mean,reconciliation_pass_count_std,reconciliation_pass_count_median,producer_complete_to_last_attainment_seconds_mean,producer_complete_to_last_attainment_seconds_std,producer_complete_to_last_attainment_seconds_median
+required_effect__retained_immediate__duplicate_pressure__standard,retained_immediate,standard,10,800,0,800,0,0,0,0,0,0,0,0,0
+required_effect__retained_deferred__duplicate_pressure__standard,retained_deferred,standard,10,15.2,2.56125,15,784.8,2.56125,785,33.2,2.088061,32,0.104938,0.088559,0.103303
+required_effect__retained_immediate__duplicate_pressure__extreme,retained_immediate,extreme,10,1400,0,1400,0,0,0,0,0,0,0,0,0
+required_effect__retained_deferred__duplicate_pressure__extreme,retained_deferred,extreme,10,24.6,2.059126,25,1375.4,2.059126,1375,37.2,0.4,37,0.060145,0.076867,0.002362

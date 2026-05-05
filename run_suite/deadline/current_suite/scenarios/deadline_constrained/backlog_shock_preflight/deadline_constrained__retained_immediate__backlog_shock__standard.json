@@ -1,0 +1,34 @@
+{
+  "boundary_type": "deadline_constrained",
+  "runtime": {
+    "case_count": 1000,
+    "observation_window_seconds": 35,
+    "quiet_period_seconds": 2.0,
+    "producer_start_delay_seconds": 1.0,
+    "deadline_window_seconds": 1.2
+  },
+  "delivery": {
+    "deferred_reconciliation_interval_ms": 250
+  },
+  "timeouts": {
+    "run_timeout_seconds": 180,
+    "producer_start_timeout_seconds": 45,
+    "producer_complete_timeout_seconds": 180
+  },
+  "scenario_id": "deadline_constrained__retained_immediate__backlog_shock__standard",
+  "configuration": "retained_immediate",
+  "family": "backlog_shock",
+  "severity": "standard",
+  "load": {
+    "event_interval_ms": 5,
+    "base_event_interval_ms": 5,
+    "overload_event_interval_ms": 1,
+    "overload_start_seconds": 1.5,
+    "overload_duration_seconds": 6.0
+  },
+  "disturbance": {
+    "interruption_start_mode": "progress_fraction",
+    "interruption_start_fraction": 0.2,
+    "interruption_duration_seconds": 2.8
+  }
+}

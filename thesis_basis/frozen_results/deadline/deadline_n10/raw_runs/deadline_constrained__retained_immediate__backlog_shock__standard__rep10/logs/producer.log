@@ -1,0 +1,2 @@
+2026-04-20T06:02:08 producer starting delivery_mode=retained event_count=1000 disturbance=interruption start_delay=1.0
+2026-04-20T06:02:15 producer finished produced=1000

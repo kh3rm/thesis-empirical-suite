@@ -1,0 +1,90 @@
+[
+  {
+    "scenario_id": "deadline_constrained__retained_deferred__backlog_shock__standard",
+    "configuration": "retained_deferred",
+    "family": "backlog_shock",
+    "severity": "standard",
+    "backlog_dwell_fraction": 0.0,
+    "active_payment_fraction": 1.0,
+    "expiry_share_proxy": 0.4875,
+    "integrated_retained_backlog_share_seconds": 0.0,
+    "integrated_active_settlement_share_seconds": 1.973653
+  },
+  {
+    "scenario_id": "deadline_constrained__retained_deferred__baseline__standard",
+    "configuration": "retained_deferred",
+    "family": "baseline",
+    "severity": "standard",
+    "backlog_dwell_fraction": 0.0,
+    "active_payment_fraction": 1.0,
+    "expiry_share_proxy": 0.0,
+    "integrated_retained_backlog_share_seconds": 0.0,
+    "integrated_active_settlement_share_seconds": 0.642294
+  },
+  {
+    "scenario_id": "deadline_constrained__retained_deferred__degradation__high",
+    "configuration": "retained_deferred",
+    "family": "degradation",
+    "severity": "high",
+    "backlog_dwell_fraction": 0.379204,
+    "active_payment_fraction": 0.620796,
+    "expiry_share_proxy": 0.989,
+    "integrated_retained_backlog_share_seconds": 1.222497,
+    "integrated_active_settlement_share_seconds": 2.001354
+  },
+  {
+    "scenario_id": "deadline_constrained__retained_deferred__degradation__moderate",
+    "configuration": "retained_deferred",
+    "family": "degradation",
+    "severity": "moderate",
+    "backlog_dwell_fraction": 0.299845,
+    "active_payment_fraction": 0.700155,
+    "expiry_share_proxy": 0.852,
+    "integrated_retained_backlog_share_seconds": 0.898121,
+    "integrated_active_settlement_share_seconds": 2.097161
+  },
+  {
+    "scenario_id": "deadline_constrained__retained_immediate__backlog_shock__standard",
+    "configuration": "retained_immediate",
+    "family": "backlog_shock",
+    "severity": "standard",
+    "backlog_dwell_fraction": 0.956664,
+    "active_payment_fraction": 0.043336,
+    "expiry_share_proxy": 0.2935,
+    "integrated_retained_backlog_share_seconds": 0.865583,
+    "integrated_active_settlement_share_seconds": 0.03921
+  },
+  {
+    "scenario_id": "deadline_constrained__retained_immediate__baseline__standard",
+    "configuration": "retained_immediate",
+    "family": "baseline",
+    "severity": "standard",
+    "backlog_dwell_fraction": 0.0,
+    "active_payment_fraction": 1.0,
+    "expiry_share_proxy": 0.0,
+    "integrated_retained_backlog_share_seconds": 0.0,
+    "integrated_active_settlement_share_seconds": 0.000523
+  },
+  {
+    "scenario_id": "deadline_constrained__retained_immediate__degradation__high",
+    "configuration": "retained_immediate",
+    "family": "degradation",
+    "severity": "high",
+    "backlog_dwell_fraction": 0.397587,
+    "active_payment_fraction": 0.602413,
+    "expiry_share_proxy": 0.973,
+    "integrated_retained_backlog_share_seconds": 1.238097,
+    "integrated_active_settlement_share_seconds": 1.87593
+  },
+  {
+    "scenario_id": "deadline_constrained__retained_immediate__degradation__moderate",
+    "configuration": "retained_immediate",
+    "family": "degradation",
+    "severity": "moderate",
+    "backlog_dwell_fraction": 0.491271,
+    "active_payment_fraction": 0.508729,
+    "expiry_share_proxy": 0.543,
+    "integrated_retained_backlog_share_seconds": 0.844923,
+    "integrated_active_settlement_share_seconds": 0.87495
+  }
+]

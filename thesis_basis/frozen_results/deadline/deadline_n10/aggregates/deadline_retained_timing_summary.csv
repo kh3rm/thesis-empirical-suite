@@ -1,0 +1,9 @@
+scenario_id,configuration,family,severity,backlog_dwell_fraction,active_payment_fraction,expiry_share_proxy,integrated_retained_backlog_share_seconds,integrated_active_settlement_share_seconds
+deadline_constrained__retained_deferred__backlog_shock__standard,retained_deferred,backlog_shock,standard,0.0,1.0,0.4875,0.0,1.973653
+deadline_constrained__retained_deferred__baseline__standard,retained_deferred,baseline,standard,0.0,1.0,0.0,0.0,0.642294
+deadline_constrained__retained_deferred__degradation__high,retained_deferred,degradation,high,0.379204,0.620796,0.989,1.222497,2.001354
+deadline_constrained__retained_deferred__degradation__moderate,retained_deferred,degradation,moderate,0.299845,0.700155,0.852,0.898121,2.097161
+deadline_constrained__retained_immediate__backlog_shock__standard,retained_immediate,backlog_shock,standard,0.956664,0.043336,0.2935,0.865583,0.03921
+deadline_constrained__retained_immediate__baseline__standard,retained_immediate,baseline,standard,0.0,1.0,0.0,0.0,0.000523
+deadline_constrained__retained_immediate__degradation__high,retained_immediate,degradation,high,0.397587,0.602413,0.973,1.238097,1.87593
+deadline_constrained__retained_immediate__degradation__moderate,retained_immediate,degradation,moderate,0.491271,0.508729,0.543,0.844923,0.87495

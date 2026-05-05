@@ -1,0 +1,21 @@
+{
+  "profile_name": "deadline_targeted_validation_n10",
+  "repeat_count": 10,
+  "plot_default": false,
+  "seed": 9700,
+  "boundary_types": [
+    "deadline_constrained"
+  ],
+  "scenario_files": [
+    "scenarios/deadline_constrained/degradation_moderate8/deadline_constrained__transient_immediate__degradation__moderate.json",
+    "scenarios/deadline_constrained/degradation_moderate8/deadline_constrained__retained_deferred__degradation__moderate.json",
+    "scenarios/deadline_constrained/degradation/deadline_constrained__transient_immediate__degradation__high.json",
+    "scenarios/deadline_constrained/degradation/deadline_constrained__retained_immediate__degradation__high.json"
+  ],
+  "selected_deadline_window_seconds": 1.2,
+  "experiment_tag": "targeted_validation_n10",
+  "experiment_notes": [
+    "Focused rerun of the deadline cells that drifted in the first full-package confirmation.",
+    "Used to validate rerun isolation and reproduce the key endpoint and lag metrics without rerunning the full profile."
+  ]
+}

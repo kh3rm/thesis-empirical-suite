@@ -1,0 +1,123 @@
+[
+  {
+    "label": "Synchronized lateness leader",
+    "scenario_id": "deadline_constrained__retained_deferred__degradation__high",
+    "family": "degradation",
+    "severity": "high",
+    "configuration": "retained_deferred",
+    "finding": "This scenario most strongly shifts much of the recovery curve later together.",
+    "role": "synchronized-lateness dominant",
+    "role_label": "broadly delayed recovery",
+    "explanation": "degradation (high) currently reads mainly as broadly delayed recovery. This scenario most strongly shifts much of the recovery curve later together."
+  },
+  {
+    "label": "Concentration leader",
+    "scenario_id": "deadline_constrained__transient_immediate__backlog_shock__standard",
+    "family": "backlog_shock",
+    "severity": "standard",
+    "configuration": "transient_immediate",
+    "finding": "This scenario most strongly converts disturbance into concentrated catch-up behaviour.",
+    "role": "concentration-dominant",
+    "role_label": "catch-up surge recovery",
+    "explanation": "backlog shock currently reads mainly as catch-up surge recovery. This scenario most strongly converts disturbance into concentrated catch-up behaviour."
+  },
+  {
+    "label": "Convergence-region leader",
+    "scenario_id": "deadline_constrained__retained_deferred__degradation__high",
+    "family": "degradation",
+    "severity": "high",
+    "configuration": "retained_deferred",
+    "finding": "This scenario most strongly displaces the late-convergence region relative to the early or main bulk.",
+    "role": "synchronized-lateness dominant",
+    "role_label": "broadly delayed recovery",
+    "explanation": "degradation (high) currently reads mainly as broadly delayed recovery. This scenario most strongly displaces the late-convergence region relative to the early or main bulk."
+  },
+  {
+    "label": "Upper-bulk displacement leader",
+    "scenario_id": "deadline_constrained__retained_deferred__degradation__high",
+    "family": "degradation",
+    "severity": "high",
+    "configuration": "retained_deferred",
+    "finding": "This scenario most strongly shifts the upper bulk / late recovery body.",
+    "role": "synchronized-lateness dominant",
+    "role_label": "broadly delayed recovery",
+    "explanation": "degradation (high) currently reads mainly as broadly delayed recovery. This scenario most strongly shifts the upper bulk / late recovery body."
+  },
+  {
+    "label": "Tail-sensitive candidate",
+    "scenario_id": "deadline_constrained__retained_deferred__backlog_shock__standard",
+    "family": "backlog_shock",
+    "severity": "standard",
+    "configuration": "retained_deferred",
+    "finding": "This scenario is the strongest current candidate for a true tail-stretch effect, though it should be read alongside convergence-region signals.",
+    "role": "concentration-dominant",
+    "role_label": "catch-up surge recovery",
+    "explanation": "backlog shock currently reads mainly as catch-up surge recovery. This scenario is the strongest current candidate for a true tail-stretch effect, though it should be read alongside convergence-region signals."
+  },
+  {
+    "label": "Straggler-sensitive candidate",
+    "scenario_id": "deadline_constrained__retained_deferred__backlog_shock__standard",
+    "family": "backlog_shock",
+    "severity": "standard",
+    "configuration": "retained_deferred",
+    "finding": "This scenario most strongly affects the strict straggler window (95\u219299).",
+    "role": "concentration-dominant",
+    "role_label": "catch-up surge recovery",
+    "explanation": "backlog shock currently reads mainly as catch-up surge recovery. This scenario most strongly affects the strict straggler window (95\u219299)."
+  },
+  {
+    "label": "Upper-bulk shift leader",
+    "scenario_id": "deadline_constrained__retained_deferred__degradation__high",
+    "family": "degradation",
+    "severity": "high",
+    "configuration": "retained_deferred",
+    "finding": "This scenario most strongly shifts the upper bulk later in the recovery episode.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "degradation (high) currently reads mainly as n/a. This scenario most strongly shifts the upper bulk later in the recovery episode."
+  },
+  {
+    "label": "Convergence-region shift leader",
+    "scenario_id": "deadline_constrained__retained_deferred__degradation__high",
+    "family": "degradation",
+    "severity": "high",
+    "configuration": "retained_deferred",
+    "finding": "This scenario most strongly shifts the late-convergence region later in the recovery episode.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "degradation (high) currently reads mainly as n/a. This scenario most strongly shifts the late-convergence region later in the recovery episode."
+  },
+  {
+    "label": "Straggler-region shift leader",
+    "scenario_id": "deadline_constrained__retained_deferred__degradation__high",
+    "family": "degradation",
+    "severity": "high",
+    "configuration": "retained_deferred",
+    "finding": "This scenario most strongly shifts the strict straggler region later.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "degradation (high) currently reads mainly as n/a. This scenario most strongly shifts the strict straggler region later."
+  },
+  {
+    "label": "Upper-bulk compression leader",
+    "scenario_id": "deadline_constrained__retained_immediate__degradation__high",
+    "family": "degradation",
+    "severity": "high",
+    "configuration": "retained_immediate",
+    "finding": "This scenario most strongly compresses the upper bulk while shifting the broader curve.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "degradation (high) currently reads mainly as n/a. This scenario most strongly compresses the upper bulk while shifting the broader curve."
+  },
+  {
+    "label": "Late-region compression leader",
+    "scenario_id": "deadline_constrained__retained_immediate__degradation__high",
+    "family": "degradation",
+    "severity": "high",
+    "configuration": "retained_immediate",
+    "finding": "This scenario most strongly compresses the late-convergence region while still shifting it later overall.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "degradation (high) currently reads mainly as n/a. This scenario most strongly compresses the late-convergence region while still shifting it later overall."
+  }
+]

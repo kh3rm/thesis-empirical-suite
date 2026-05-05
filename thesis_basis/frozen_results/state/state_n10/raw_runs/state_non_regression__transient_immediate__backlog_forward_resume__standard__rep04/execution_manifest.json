@@ -1,0 +1,7 @@
+{
+  "run_id": "state_non_regression__transient_immediate__backlog_forward_resume__standard__rep04",
+  "project_name": "state_non_regression__transient_immediate__backlog_forward_resume__standard_rep04",
+  "started_at": "2026-04-20T08:31:45+02:00",
+  "host_run_dir": "/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__transient_immediate__backlog_forward_resume__standard__rep04",
+  "runtime_env_file": "/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__transient_immediate__backlog_forward_resume__standard__rep04/scenario.env"
+}

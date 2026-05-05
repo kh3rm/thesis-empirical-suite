@@ -1,0 +1,30 @@
+{
+  "boundary_type": "required_effect",
+  "runtime": {
+    "case_count": 1000,
+    "observation_window_seconds": 35,
+    "quiet_period_seconds": 2.0,
+    "producer_start_delay_seconds": 1.0
+  },
+  "delivery": {
+    "deferred_reconciliation_interval_ms": 250
+  },
+  "timeouts": {
+    "run_timeout_seconds": 240,
+    "producer_start_timeout_seconds": 60,
+    "producer_complete_timeout_seconds": 240
+  },
+  "scenario_id": "required_effect__retained_immediate__handling_gap_replayable__standard",
+  "configuration": "retained_immediate",
+  "family": "handling_gap_replayable",
+  "severity": "standard",
+  "disturbance": {
+    "interruption_start_mode": "time_seconds",
+    "interruption_start_delay_seconds": 2.0,
+    "interruption_duration_seconds": 3.5,
+    "transient_interrupt_disconnect": true
+  },
+  "scenario_role": "supporting",
+  "scenario_role_detail": "supporting_required_effect_probe",
+  "display_label": "handling_gap_replayable"
+}

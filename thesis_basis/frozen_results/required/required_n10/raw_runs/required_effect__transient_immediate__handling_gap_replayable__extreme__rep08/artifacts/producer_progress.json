@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "produced_event_count": 1000,
+  "produced_case_count": 1000,
+  "event_count": 1000,
+  "progress_fraction": 1.0,
+  "elapsed_seconds": 5.646008
+}

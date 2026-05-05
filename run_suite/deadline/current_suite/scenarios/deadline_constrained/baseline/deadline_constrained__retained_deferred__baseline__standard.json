@@ -1,0 +1,23 @@
+{
+  "boundary_type": "deadline_constrained",
+  "runtime": {
+    "case_count": 1000,
+    "observation_window_seconds": 30,
+    "quiet_period_seconds": 2.0,
+    "producer_start_delay_seconds": 1.0,
+    "deadline_window_seconds": 1.2
+  },
+  "delivery": {
+    "deferred_reconciliation_interval_ms": 250
+  },
+  "timeouts": {
+    "run_timeout_seconds": 180,
+    "producer_start_timeout_seconds": 45,
+    "producer_complete_timeout_seconds": 180
+  },
+  "scenario_id": "deadline_constrained__retained_deferred__baseline__standard",
+  "configuration": "retained_deferred",
+  "family": "baseline",
+  "severity": "standard",
+  "disturbance": {}
+}

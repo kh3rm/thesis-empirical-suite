@@ -1,0 +1,146 @@
+[
+  {
+    "scenario_id": "required_effect__retained_deferred__baseline__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_deferred__duplicate_pressure__extreme",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_deferred__duplicate_pressure__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_deferred__handling_gap_replayable__extreme",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_deferred__handling_gap_replayable__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_deferred__source_omission__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_immediate__baseline__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_immediate__duplicate_pressure__extreme",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_immediate__duplicate_pressure__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_immediate__handling_gap_replayable__extreme",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_immediate__handling_gap_replayable__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__retained_immediate__source_omission__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__transient_immediate__baseline__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__extreme",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__transient_immediate__handling_gap_replayable__extreme",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__transient_immediate__handling_gap_replayable__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  },
+  {
+    "scenario_id": "required_effect__transient_immediate__source_omission__standard",
+    "planned": 10,
+    "completed": 10,
+    "failed": 0,
+    "missing": 0,
+    "coverage_fraction": 1.0
+  }
+]

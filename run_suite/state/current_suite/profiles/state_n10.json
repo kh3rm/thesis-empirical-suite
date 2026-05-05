@@ -1,0 +1,27 @@
+{
+  "profile_name": "state_n10",
+  "profile_version": "8.0",
+  "suite_role": "supporting",
+  "run_mode": "evidence",
+  "repeat_count": 10,
+  "boundary_types": [
+    "state_non_regression"
+  ],
+  "scenario_files": [
+    "scenarios/state/backlog_shock_tidyexp_round1/state_non_regression__transient_immediate__backlog_shock__standard.json",
+    "scenarios/state/backlog_shock_tidyexp_round1/state_non_regression__retained_immediate__backlog_shock__standard.json",
+    "scenarios/state/backlog_forward_resume_tidyexp_round1/state_non_regression__transient_immediate__backlog_forward_resume__standard.json",
+    "scenarios/state/backlog_forward_resume_tidyexp_round1/state_non_regression__retained_immediate__backlog_forward_resume__standard.json"
+  ],
+  "plot_default": false,
+  "seed": 1711,
+  "run_state_non_regression_analysis": true,
+  "run_state_non_regression_spotcheck": true,
+  "experiment_tag": "tidyexp_round2_n10",
+  "experiment_notes": [
+    "Frozen from state_non_regression_backlog_spotcheck_dev_tidyexp_round1 (no parameter changes).",
+    "Backlog shock interruption start fraction remains 0.80.",
+    "Backlog + forward-resume interruption start fraction remains 0.60.",
+    "Outage-exposed start fraction remains 0.35 for both scenarios."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "run_id": "required_effect__transient_immediate__baseline__standard__rep10",
+  "project_name": "required_effect__transient_immediate__baseline__standard_rep10",
+  "started_at": "2026-04-20T08:11:49+02:00",
+  "host_run_dir": "/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/required_effect_clean_validated_tidyexp_round2_n10_2026-04-20_080742/raw_runs/required_effect__transient_immediate__baseline__standard__rep10",
+  "runtime_env_file": "/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/required_effect_clean_validated_tidyexp_round2_n10_2026-04-20_080742/raw_runs/required_effect__transient_immediate__baseline__standard__rep10/scenario.env"
+}

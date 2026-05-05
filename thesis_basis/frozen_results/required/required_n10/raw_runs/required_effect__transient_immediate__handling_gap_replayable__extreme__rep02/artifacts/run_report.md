@@ -1,0 +1,21 @@
+# Run report
+
+- boundary: required_effect
+- delivery_mode: transient
+- enforcement_timing: immediate
+- disturbance: interruption
+- status: complete
+- produced_case_count: 1000
+- produced_case_count_emitted: 1000
+- received_event_count: 127
+- attained_case_count: 127
+- unattained_case_count: 873
+- state_latest_version_attainment_rate: 0.0
+- state_latest_version_omission_rate: 0.0
+- state_obsolete_suppression_count: 0
+- state_same_version_duplicate_count: 0
+- duplicate_delivery_count: 0
+- duplicate_side_effect_execution_count: 0
+- correction_rewrite_count: 0
+- wrong_latest_version_commit_count: 0
+- observation_window_expired: False

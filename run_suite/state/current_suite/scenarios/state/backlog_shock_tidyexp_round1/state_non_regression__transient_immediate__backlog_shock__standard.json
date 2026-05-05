@@ -1,0 +1,36 @@
+{
+  "boundary_type": "state_non_regression",
+  "runtime": {
+    "case_count": 300,
+    "updates_per_entity": 3,
+    "observation_window_seconds": 35,
+    "quiet_period_seconds": 2.0,
+    "producer_start_delay_seconds": 1.0
+  },
+  "delivery": {
+    "deferred_reconciliation_interval_ms": 250
+  },
+  "timeouts": {
+    "run_timeout_seconds": 240,
+    "producer_start_timeout_seconds": 60,
+    "producer_complete_timeout_seconds": 240
+  },
+  "scenario_id": "state_non_regression__transient_immediate__backlog_shock__standard",
+  "configuration": "transient_immediate",
+  "family": "backlog_shock",
+  "severity": "standard",
+  "disturbance": {
+    "interruption_start_mode": "progress_fraction",
+    "interruption_duration_seconds": 2.4,
+    "state_obsolete_replay_fraction": 0.3,
+    "interruption_start_fraction": 0.8,
+    "transient_interrupt_disconnect": true,
+    "state_transient_drop_exposed_latest": true,
+    "state_outage_exposed_version": 3,
+    "state_outage_exposed_start_fraction": 0.35,
+    "state_forward_resumption_version": 0
+  },
+  "scenario_role": "state_non_regression_pilot",
+  "scenario_role_detail": "comparative_concentration",
+  "display_label": "backlog shock"
+}

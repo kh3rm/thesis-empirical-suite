@@ -1,0 +1,3 @@
+2026-04-20T06:29:07 producer starting delivery_mode=retained boundary=state_non_regression event_count=300 disturbance=interruption start_delay=1.0
+2026-04-20T06:29:08 producer state_obsolete_replay_selected entity_count=90 updates_per_entity=3
+2026-04-20T06:29:21 producer finished produced_events=990 produced_cases=300

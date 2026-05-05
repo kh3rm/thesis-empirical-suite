@@ -1,0 +1,18 @@
+{
+  "main_deadline_window_seconds": 1.45,
+  "deadline_sweep_window_seconds": [
+    1.35,
+    1.45,
+    1.55
+  ],
+  "full_repeat_count": 5,
+  "development_repeat_count": 2,
+  "profile_version": "6.8",
+  "deadline_response_window_seconds": [
+    1.1,
+    1.25,
+    1.45,
+    1.65,
+    1.9
+  ]
+}

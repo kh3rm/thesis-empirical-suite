@@ -1,0 +1,3 @@
+2026-04-20T07:56:54 producer starting delivery_mode=retained boundary=required_effect event_count=1000 disturbance=omission_pressure start_delay=1.0
+2026-04-20T07:56:55 producer omission_pressure_selected omitted_case_count=200 mode=selected_cases_skip
+2026-04-20T07:57:02 producer finished produced_events=800 produced_cases=800

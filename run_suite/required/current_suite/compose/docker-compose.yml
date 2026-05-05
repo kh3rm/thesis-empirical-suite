@@ -1,0 +1,44 @@
+services:
+  redis:
+    image: redis:7-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 2s
+      timeout: 2s
+      retries: 20
+
+  consumer:
+    build:
+      context: ..
+      dockerfile: docker/consumer.Dockerfile
+    env_file:
+      - ${RUN_ENV_FILE}
+    environment:
+      RUN_DIR: /run
+      LOGS_DIR: /run/logs
+      ARTIFACTS_DIR: /run/artifacts
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ${HOST_RUN_DIR}:/run
+    command: ["python3", "/app/consumer.py"]
+    depends_on:
+      redis:
+        condition: service_healthy
+
+  producer:
+    build:
+      context: ..
+      dockerfile: docker/producer.Dockerfile
+    env_file:
+      - ${RUN_ENV_FILE}
+    environment:
+      RUN_DIR: /run
+      LOGS_DIR: /run/logs
+      ARTIFACTS_DIR: /run/artifacts
+      PYTHONUNBUFFERED: "1"
+    volumes:
+      - ${HOST_RUN_DIR}:/run
+    command: ["python3", "/app/producer.py"]
+    depends_on:
+      redis:
+        condition: service_healthy

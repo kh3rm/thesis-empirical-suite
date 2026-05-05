@@ -1,0 +1,273 @@
+[2026-04-20T08:17:51+02:00] COMPOSE_UP_SERVICES
+
+=== COMPOSE_UP_SERVICES ===
+COMMAND: compose -f /home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/compose/docker-compose.yml --project-name state_non_regression__transient_immediate__backlog_shock__standard_rep05 up -d --build redis consumer producer
+ Image state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer Building 
+ Image state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.45kB done
+#1 DONE 0.0s
+
+#2 [consumer internal] load build definition from consumer.Dockerfile
+#2 transferring dockerfile: 204B done
+#2 DONE 0.2s
+
+#3 [producer internal] load build definition from producer.Dockerfile
+#3 transferring dockerfile: 204B done
+#3 DONE 0.5s
+
+#4 [consumer internal] load metadata for docker.io/library/python:3.11-slim
+#4 DONE 0.9s
+
+#5 [consumer internal] load .dockerignore
+#5 transferring context:
+#5 transferring context: 2B done
+#5 DONE 0.4s
+
+#6 [consumer internal] load build context
+#6 DONE 0.0s
+
+#7 [producer 1/4] FROM docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf
+#7 resolve docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf
+#7 ...
+
+#6 [consumer internal] load build context
+#6 transferring context: 49.72kB 0.0s done
+#6 DONE 0.5s
+
+#8 [producer internal] load build context
+#8 transferring context: 16.90kB done
+#8 DONE 0.7s
+
+#7 [producer 1/4] FROM docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf
+#7 resolve docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf 0.8s done
+#7 DONE 0.8s
+
+#9 [producer 2/4] WORKDIR /app
+#9 CACHED
+
+#10 [producer 3/4] RUN pip install --no-cache-dir redis==5.2.1
+#10 CACHED
+
+#11 [producer 4/4] COPY docker/producer.py /app/producer.py
+#11 CACHED
+
+#9 [consumer 2/4] WORKDIR /app
+#9 CACHED
+
+#10 [consumer 3/4] RUN pip install --no-cache-dir redis==5.2.1
+#10 CACHED
+
+#12 [consumer 4/4] COPY docker/consumer.py /app/consumer.py
+#12 CACHED
+
+#13 [consumer] exporting to image
+#13 exporting layers done
+#13 writing image sha256:eabc60e6bbf5896ddd219e39da0abc1c47395ff343dd661a387902a16607a09d 0.1s done
+#13 naming to docker.io/library/state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer
+#13 naming to docker.io/library/state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer 0.1s done
+#13 ...
+
+#14 [producer] exporting to image
+#14 exporting layers done
+#14 writing image sha256:7e5f11247634cd95636eec17d0bf2c0568094ae8911a13bd0e17b14caa06c7a0 0.0s done
+#14 naming to docker.io/library/state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer 0.1s done
+#14 DONE 0.5s
+
+#13 [consumer] exporting to image
+#13 DONE 0.5s
+
+#15 [producer] resolving provenance for metadata file
+#15 DONE 0.0s
+
+#16 [consumer] resolving provenance for metadata file
+#16 DONE 0.0s
+ Image state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer Built 
+ Image state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer Built 
+ Network state_non_regression__transient_immediate__backlog_shock__standard_rep05_default Creating 
+ Network state_non_regression__transient_immediate__backlog_shock__standard_rep05_default Created 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Creating 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Created 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer-1 Creating 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer-1 Creating 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer-1 Created 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer-1 Created 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Starting 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Started 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Waiting 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Waiting 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Healthy 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer-1 Starting 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Healthy 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer-1 Starting 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer-1 Started 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer-1 Started 
+[2026-04-20T08:18:06+02:00] WAIT_FOR_PRODUCER_START
+path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__transient_immediate__backlog_shock__standard__rep05/artifacts/producer_started.json
+[2026-04-20T08:18:07+02:00] WAIT_FOR_PRODUCER_START_detected
+[2026-04-20T08:18:07+02:00] WAIT_FOR_PRODUCER_COMPLETION
+path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__transient_immediate__backlog_shock__standard__rep05/artifacts/producer_complete.json
+[2026-04-20T08:18:13+02:00] WAIT_FOR_PRODUCER_COMPLETION_detected
+[2026-04-20T08:18:13+02:00] WAIT_FOR_RUN_COMPLETION
+sentinel_path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__transient_immediate__backlog_shock__standard__rep05/artifacts/run_complete.json
+summary_path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__transient_immediate__backlog_shock__standard__rep05/logs/consumer_summary.json
+[2026-04-20T08:18:15+02:00] completion_detected
+[2026-04-20T08:18:15+02:00] COMPOSE_LOGS
+
+=== COMPOSE_LOGS ===
+COMMAND: compose -f /home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/compose/docker-compose.yml --project-name state_non_regression__transient_immediate__backlog_shock__standard_rep05 logs --no-color
+redis-1  | 1:C 20 Apr 2026 06:18:02.167 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1  | 1:C 20 Apr 2026 06:18:02.167 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 20 Apr 2026 06:18:02.167 * Redis version=7.4.8, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 20 Apr 2026 06:18:02.167 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis-1  | 1:M 20 Apr 2026 06:18:02.168 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 20 Apr 2026 06:18:02.169 * Running mode=standalone, port=6379.
+redis-1  | 1:M 20 Apr 2026 06:18:02.169 * Server initialized
+redis-1  | 1:M 20 Apr 2026 06:18:02.170 * Ready to accept connections tcp
+producer-1  | 2026-04-20T06:18:06 producer starting delivery_mode=transient boundary=state_non_regression event_count=300 disturbance=interruption start_delay=1.0
+producer-1  | 2026-04-20T06:18:07 producer state_obsolete_replay_selected entity_count=90 updates_per_entity=3
+producer-1  | 2026-04-20T06:18:13 producer finished produced_events=990 produced_cases=300
+consumer-1  | 2026-04-20T06:18:06 consumer starting delivery_mode=transient enforcement_timing=immediate boundary=state_non_regression disturbance=interruption
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=0 version=3 attained=1
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=1 version=3 attained=2
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=2 version=3 attained=3
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=3 version=3 attained=4
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=4 version=3 attained=5
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=5 version=3 attained=6
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=6 version=3 attained=7
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=7 version=3 attained=8
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=8 version=3 attained=9
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=9 version=3 attained=10
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=10 version=3 attained=11
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=11 version=3 attained=12
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=12 version=3 attained=13
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=13 version=3 attained=14
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=14 version=3 attained=15
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=15 version=3 attained=16
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=16 version=3 attained=17
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=17 version=3 attained=18
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=18 version=3 attained=19
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=19 version=3 attained=20
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=20 version=3 attained=21
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=21 version=3 attained=22
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=22 version=3 attained=23
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=23 version=3 attained=24
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=24 version=3 attained=25
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=25 version=3 attained=26
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=26 version=3 attained=27
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=27 version=3 attained=28
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=28 version=3 attained=29
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=29 version=3 attained=30
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=30 version=3 attained=31
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=31 version=3 attained=32
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=32 version=3 attained=33
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=33 version=3 attained=34
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=34 version=3 attained=35
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=35 version=3 attained=36
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=36 version=3 attained=37
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=37 version=3 attained=38
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=38 version=3 attained=39
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=39 version=3 attained=40
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=40 version=3 attained=41
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=41 version=3 attained=42
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=42 version=3 attained=43
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=43 version=3 attained=44
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=44 version=3 attained=45
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=45 version=3 attained=46
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=46 version=3 attained=47
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=47 version=3 attained=48
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=48 version=3 attained=49
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=49 version=3 attained=50
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=50 version=3 attained=51
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=51 version=3 attained=52
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=52 version=3 attained=53
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=53 version=3 attained=54
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=54 version=3 attained=55
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=55 version=3 attained=56
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=56 version=3 attained=57
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=57 version=3 attained=58
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=58 version=3 attained=59
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=59 version=3 attained=60
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=60 version=3 attained=61
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=61 version=3 attained=62
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=62 version=3 attained=63
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=63 version=3 attained=64
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=64 version=3 attained=65
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=65 version=3 attained=66
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=66 version=3 attained=67
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=67 version=3 attained=68
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=68 version=3 attained=69
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=69 version=3 attained=70
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=70 version=3 attained=71
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=71 version=3 attained=72
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=72 version=3 attained=73
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=73 version=3 attained=74
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=74 version=3 attained=75
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=75 version=3 attained=76
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=76 version=3 attained=77
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=77 version=3 attained=78
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=78 version=3 attained=79
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=79 version=3 attained=80
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=80 version=3 attained=81
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=81 version=3 attained=82
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=82 version=3 attained=83
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=83 version=3 attained=84
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=84 version=3 attained=85
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=85 version=3 attained=86
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=86 version=3 attained=87
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=87 version=3 attained=88
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=88 version=3 attained=89
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=89 version=3 attained=90
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=90 version=3 attained=91
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=91 version=3 attained=92
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=92 version=3 attained=93
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=93 version=3 attained=94
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=94 version=3 attained=95
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=95 version=3 attained=96
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=96 version=3 attained=97
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=97 version=3 attained=98
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=98 version=3 attained=99
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=99 version=3 attained=100
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=100 version=3 attained=101
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=101 version=3 attained=102
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=102 version=3 attained=103
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=103 version=3 attained=104
+consumer-1  | 2026-04-20T06:18:11 consumer latest_state_attained entity_id=104 version=3 attained=105
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=105 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=106 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=107 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=108 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=109 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=110 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=111 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=112 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=113 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=114 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=115 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=116 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=117 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=118 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer state_outage_drop entity_id=119 version=3 exposed_version=3
+consumer-1  | 2026-04-20T06:18:11 consumer interruption_disconnect_active mode=progress_fraction reason=progress_fraction>=0.8 duration=2.400 state_drop_exposed_latest=True
+consumer-1  | 2026-04-20T06:18:14 consumer interruption_disconnect_complete resubscribed=true
+consumer-1  | 2026-04-20T06:18:14 consumer producer_complete_seen emitted_hint=300 logical_hint=300 seen_elapsed=7.661979
+consumer-1  | 2026-04-20T06:18:14 consumer drain_complete processed=705 emitted_hint=300 logical_hint=300 quiet_for=2.406
+[2026-04-20T08:18:16+02:00] run_finished
+[2026-04-20T08:18:16+02:00] COMPOSE_DOWN
+
+=== COMPOSE_DOWN ===
+COMMAND: compose -f /home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/compose/docker-compose.yml --project-name state_non_regression__transient_immediate__backlog_shock__standard_rep05 down -v --remove-orphans
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer-1 Stopping 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer-1 Stopping 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer-1 Stopped 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer-1 Removing 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer-1 Stopped 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer-1 Removing 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-producer-1 Removed 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-consumer-1 Removed 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Stopping 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Stopped 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Removing 
+ Container state_non_regression__transient_immediate__backlog_shock__standard_rep05-redis-1 Removed 
+ Network state_non_regression__transient_immediate__backlog_shock__standard_rep05_default Removing 
+ Network state_non_regression__transient_immediate__backlog_shock__standard_rep05_default Removed 

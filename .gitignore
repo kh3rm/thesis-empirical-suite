@@ -1,0 +1,12 @@
+run_suite/*/current_suite/output/
+verification_reports/*
+!verification_reports/targeted_validation_summary_20260504.md
+scripts/__pycache__/
+run_suite/*/current_suite/**/__pycache__/
+res.aux
+res.fdb_latexmk
+res.fls
+res.log
+res.out
+res.pdf
+res.tex

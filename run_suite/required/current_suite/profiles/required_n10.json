@@ -1,0 +1,42 @@
+{
+  "profile_name": "required_n10",
+  "profile_version": "8.1",
+  "suite_role": "supporting",
+  "run_mode": "evidence",
+  "repeat_count": 10,
+  "plot_default": true,
+  "seed": 7931,
+  "boundary_types": [
+    "required_effect"
+  ],
+  "scenario_files": [
+    "scenarios/required/baseline/required_effect__transient_immediate__baseline__standard.json",
+    "scenarios/required/baseline/required_effect__retained_immediate__baseline__standard.json",
+    "scenarios/required/baseline/required_effect__retained_deferred__baseline__standard.json",
+    "scenarios/required/duplicate_pressure_tidyexp_round1/required_effect__transient_immediate__duplicate_pressure__standard.json",
+    "scenarios/required/duplicate_pressure_tidyexp_round1/required_effect__retained_immediate__duplicate_pressure__standard.json",
+    "scenarios/required/duplicate_pressure_tidyexp_round1/required_effect__retained_deferred__duplicate_pressure__standard.json",
+    "scenarios/required/duplicate_pressure/required_effect__transient_immediate__duplicate_pressure__extreme.json",
+    "scenarios/required/duplicate_pressure/required_effect__retained_immediate__duplicate_pressure__extreme.json",
+    "scenarios/required/duplicate_pressure/required_effect__retained_deferred__duplicate_pressure__extreme.json",
+    "scenarios/required/handling_gap_replayable_tidyexp_round1/required_effect__transient_immediate__handling_gap_replayable__standard.json",
+    "scenarios/required/handling_gap_replayable_tidyexp_round1/required_effect__retained_immediate__handling_gap_replayable__standard.json",
+    "scenarios/required/handling_gap_replayable_tidyexp_round1/required_effect__retained_deferred__handling_gap_replayable__standard.json",
+    "scenarios/required/handling_gap_replayable_tidyexp_round1/required_effect__transient_immediate__handling_gap_replayable__extreme.json",
+    "scenarios/required/handling_gap_replayable_tidyexp_round1/required_effect__retained_immediate__handling_gap_replayable__extreme.json",
+    "scenarios/required/handling_gap_replayable_tidyexp_round1/required_effect__retained_deferred__handling_gap_replayable__extreme.json",
+    "scenarios/required/source_omission_tidyexp_round1/required_effect__transient_immediate__source_omission__standard.json",
+    "scenarios/required/source_omission_tidyexp_round1/required_effect__retained_immediate__source_omission__standard.json",
+    "scenarios/required/source_omission_tidyexp_round1/required_effect__retained_deferred__source_omission__standard.json"
+  ],
+  "run_required_effect_clean_validation": true,
+  "notes": "Frozen required-effect tidy set promoted to N=10 confirmation run.",
+  "experiment_tag": "tidyexp_round2_n10",
+  "experiment_notes": [
+    "Frozen from required_effect_clean_validated_tidyexp_round1 (no parameter changes).",
+    "Handling-gap standard uses start=2.0s and duration=3.5s.",
+    "Handling-gap extreme uses start=1.5s and duration=5.0s.",
+    "Source omission uses omission fraction 0.20.",
+    "Duplicate pressure standard uses duplicate fraction 0.40."
+  ]
+}

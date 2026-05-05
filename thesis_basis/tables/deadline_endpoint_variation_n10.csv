@@ -1,0 +1,13 @@
+scenario_id,configuration,family,severity,repeat_count,expired_count_mean,expired_count_std,expired_count_median,completed_in_time_count_mean,completed_in_time_count_std,completed_in_time_count_median
+deadline_constrained__transient_immediate__baseline__standard,transient_immediate,baseline,standard,10,0,0,0,1000,0,1000
+deadline_constrained__retained_immediate__baseline__standard,retained_immediate,baseline,standard,10,0,0,0,1000,0,1000
+deadline_constrained__retained_deferred__baseline__standard,retained_deferred,baseline,standard,10,0,0,0,1000,0,1000
+deadline_constrained__transient_immediate__backlog_shock__standard,transient_immediate,backlog_shock,standard,10,290.4,17.493999,297,709.6,17.493999,703
+deadline_constrained__retained_immediate__backlog_shock__standard,retained_immediate,backlog_shock,standard,10,266,72.888957,293.5,734,72.888957,706.5
+deadline_constrained__retained_deferred__backlog_shock__standard,retained_deferred,backlog_shock,standard,10,464.1,63.470387,487.5,535.9,63.470387,512.5
+deadline_constrained__transient_immediate__degradation__moderate,transient_immediate,degradation,moderate,10,521.1,121.970857,599,478.9,121.970857,401
+deadline_constrained__retained_immediate__degradation__moderate,retained_immediate,degradation,moderate,10,476.5,135.181545,543,523.5,135.181545,457
+deadline_constrained__retained_deferred__degradation__moderate,retained_deferred,degradation,moderate,10,842.1,25.28814,852,157.9,25.28814,148
+deadline_constrained__transient_immediate__degradation__high,transient_immediate,degradation,high,10,971.4,5.141984,973,28.6,5.141984,27
+deadline_constrained__retained_immediate__degradation__high,retained_immediate,degradation,high,10,972.2,3.762978,973,27.8,3.762978,27
+deadline_constrained__retained_deferred__degradation__high,retained_deferred,degradation,high,10,988,4.07431,989,12,4.07431,11

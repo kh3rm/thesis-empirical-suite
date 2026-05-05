@@ -1,0 +1,31 @@
+{
+  "profile_name": "deadline_n10",
+  "repeat_count": 10,
+  "plot_default": true,
+  "seed": 7000,
+  "boundary_types": [
+    "deadline_constrained"
+  ],
+  "scenario_files": [
+    "scenarios/deadline_constrained/baseline/deadline_constrained__transient_immediate__baseline__standard.json",
+    "scenarios/deadline_constrained/baseline/deadline_constrained__retained_immediate__baseline__standard.json",
+    "scenarios/deadline_constrained/baseline/deadline_constrained__retained_deferred__baseline__standard.json",
+    "scenarios/deadline_constrained/degradation_moderate8/deadline_constrained__transient_immediate__degradation__moderate.json",
+    "scenarios/deadline_constrained/degradation_moderate8/deadline_constrained__retained_immediate__degradation__moderate.json",
+    "scenarios/deadline_constrained/degradation_moderate8/deadline_constrained__retained_deferred__degradation__moderate.json",
+    "scenarios/deadline_constrained/degradation/deadline_constrained__transient_immediate__degradation__high.json",
+    "scenarios/deadline_constrained/degradation/deadline_constrained__retained_immediate__degradation__high.json",
+    "scenarios/deadline_constrained/degradation/deadline_constrained__retained_deferred__degradation__high.json",
+    "scenarios/deadline_constrained/backlog_shock_preflight/deadline_constrained__transient_immediate__backlog_shock__standard.json",
+    "scenarios/deadline_constrained/backlog_shock_preflight/deadline_constrained__retained_immediate__backlog_shock__standard.json",
+    "scenarios/deadline_constrained/backlog_shock_preflight/deadline_constrained__retained_deferred__backlog_shock__standard.json"
+  ],
+  "selected_deadline_window_seconds": 1.2,
+  "experiment_tag": "tidyexp_round3_n10",
+  "experiment_notes": [
+    "Frozen from tidyexp_round2 for N=10 confirmation (no parameter changes).",
+    "Moderate degradation uses 8ms delay over 8.0s.",
+    "Backlog shock uses 2.8s interruption variant.",
+    "High degradation remains 50ms over 8.0s."
+  ]
+}

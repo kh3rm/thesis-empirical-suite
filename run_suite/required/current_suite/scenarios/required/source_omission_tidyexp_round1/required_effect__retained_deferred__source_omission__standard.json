@@ -1,0 +1,28 @@
+{
+  "boundary_type": "required_effect",
+  "runtime": {
+    "case_count": 1000,
+    "observation_window_seconds": 35,
+    "quiet_period_seconds": 2.0,
+    "producer_start_delay_seconds": 1.0
+  },
+  "delivery": {
+    "deferred_reconciliation_interval_ms": 250
+  },
+  "timeouts": {
+    "run_timeout_seconds": 240,
+    "producer_start_timeout_seconds": 60,
+    "producer_complete_timeout_seconds": 240
+  },
+  "scenario_id": "required_effect__retained_deferred__source_omission__standard",
+  "configuration": "retained_deferred",
+  "family": "source_omission",
+  "severity": "standard",
+  "disturbance": {
+    "omission_fraction": 0.2,
+    "omission_mode": "selected_cases_skip"
+  },
+  "scenario_role": "supporting",
+  "scenario_role_detail": "supporting_required_effect_probe",
+  "display_label": "source_omission"
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "scenario_id": "required_effect__retained_deferred__baseline__standard",
+    "boundary_type": "required_effect",
+    "configuration": "retained_deferred",
+    "family": "baseline",
+    "severity": "standard",
+    "scenario_role": "main_core",
+    "attainment_rate_mean": 1.0,
+    "mean_time_to_attainment_seconds_mean": 4.254302,
+    "p95_time_to_attainment_seconds_mean": 7.03723,
+    "completed_in_time_rate_mean": 1.0,
+    "expired_rate_mean": 0.0,
+    "temporal_clustering_busiest_10pct_interval_share_100ms_mean": 0.105,
+    "duplicate_delivery_rate_mean": 0.0,
+    "duplicate_delivery_count_mean": 0.0
+  },
+  {
+    "scenario_id": "required_effect__retained_immediate__baseline__standard",
+    "boundary_type": "required_effect",
+    "configuration": "retained_immediate",
+    "family": "baseline",
+    "severity": "standard",
+    "scenario_role": "main_core",
+    "attainment_rate_mean": 1.0,
+    "mean_time_to_attainment_seconds_mean": 3.889353,
+    "p95_time_to_attainment_seconds_mean": 6.621557,
+    "completed_in_time_rate_mean": 1.0,
+    "expired_rate_mean": 0.0,
+    "temporal_clustering_busiest_10pct_interval_share_100ms_mean": 0.1051,
+    "duplicate_delivery_rate_mean": 0.0,
+    "duplicate_delivery_count_mean": 0.0
+  },
+  {
+    "scenario_id": "required_effect__transient_immediate__baseline__standard",
+    "boundary_type": "required_effect",
+    "configuration": "transient_immediate",
+    "family": "baseline",
+    "severity": "standard",
+    "scenario_role": "main_core",
+    "attainment_rate_mean": 1.0,
+    "mean_time_to_attainment_seconds_mean": 3.785691,
+    "p95_time_to_attainment_seconds_mean": 6.297964,
+    "completed_in_time_rate_mean": 1.0,
+    "expired_rate_mean": 0.0,
+    "temporal_clustering_busiest_10pct_interval_share_100ms_mean": 0.0959,
+    "duplicate_delivery_rate_mean": 0.0,
+    "duplicate_delivery_count_mean": 0.0
+  }
+]

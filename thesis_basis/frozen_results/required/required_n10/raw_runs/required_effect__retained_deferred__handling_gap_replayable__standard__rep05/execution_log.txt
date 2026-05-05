@@ -1,0 +1,1160 @@
+[2026-04-20T09:11:25+02:00] COMPOSE_UP_SERVICES
+
+=== COMPOSE_UP_SERVICES ===
+COMMAND: compose -f /home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/compose/docker-compose.yml --project-name required_effect__retained_deferred__handling_gap_replayable__standard_rep05 up -d --build redis consumer producer
+ Image required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer Building 
+ Image required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.46kB done
+#1 DONE 0.0s
+
+#2 [consumer internal] load build definition from consumer.Dockerfile
+#2 transferring dockerfile: 204B done
+#2 DONE 0.3s
+
+#3 [producer internal] load build definition from producer.Dockerfile
+#3 transferring dockerfile: 204B done
+#3 DONE 0.3s
+
+#4 [producer internal] load metadata for docker.io/library/python:3.11-slim
+#4 DONE 0.7s
+
+#5 [producer internal] load .dockerignore
+#5 transferring context: 2B done
+#5 DONE 0.2s
+
+#6 [producer 1/4] FROM docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf
+#6 resolve docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf
+#6 ...
+
+#7 [producer internal] load build context
+#7 transferring context: 67B done
+#7 DONE 0.5s
+
+#8 [consumer internal] load build context
+#8 transferring context: 67B done
+#8 ...
+
+#6 [producer 1/4] FROM docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf
+#6 resolve docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf 0.7s done
+#6 DONE 0.7s
+
+#9 [producer 2/4] WORKDIR /app
+#9 CACHED
+
+#10 [producer 3/4] RUN pip install --no-cache-dir redis==5.2.1
+#10 CACHED
+
+#11 [producer 4/4] COPY docker/producer.py /app/producer.py
+#11 CACHED
+
+#8 [consumer internal] load build context
+#8 DONE 0.8s
+
+#9 [consumer 2/4] WORKDIR /app
+#9 CACHED
+
+#10 [consumer 3/4] RUN pip install --no-cache-dir redis==5.2.1
+#10 CACHED
+
+#12 [consumer 4/4] COPY docker/consumer.py /app/consumer.py
+#12 CACHED
+
+#13 [consumer] exporting to image
+#13 exporting layers done
+#13 writing image sha256:723fe55c6b8404fedcd9b994153a299a4e78a4fa121780971a524e8a29ed5354
+#13 writing image sha256:723fe55c6b8404fedcd9b994153a299a4e78a4fa121780971a524e8a29ed5354 4.0s done
+#13 naming to docker.io/library/required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer
+#13 naming to docker.io/library/required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer 0.2s done
+#13 ...
+
+#14 [producer] exporting to image
+#14 exporting layers done
+#14 writing image sha256:5ae078d4b42e7a0da66887e6026baddb43510b5b0cfe2f523e55a1572f5446e4 4.0s done
+#14 naming to docker.io/library/required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer 0.1s done
+#14 DONE 4.4s
+
+#13 [consumer] exporting to image
+#13 DONE 4.4s
+
+#15 [consumer] resolving provenance for metadata file
+#15 DONE 0.0s
+
+#16 [producer] resolving provenance for metadata file
+#16 DONE 0.0s
+ Image required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer Built 
+ Image required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer Built 
+ Network required_effect__retained_deferred__handling_gap_replayable__standard_rep05_default Creating 
+ Network required_effect__retained_deferred__handling_gap_replayable__standard_rep05_default Created 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Creating 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Created 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer-1 Creating 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer-1 Creating 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer-1 Created 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer-1 Created 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Starting 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Started 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Waiting 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Waiting 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Healthy 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Healthy 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer-1 Starting 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer-1 Starting 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer-1 Started 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer-1 Started 
+[2026-04-20T09:11:45+02:00] WAIT_FOR_PRODUCER_START
+path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/required_effect_clean_validated_tidyexp_round2_n10_2026-04-20_080742/raw_runs/required_effect__retained_deferred__handling_gap_replayable__standard__rep05/artifacts/producer_started.json
+[2026-04-20T09:11:46+02:00] WAIT_FOR_PRODUCER_START_detected
+[2026-04-20T09:11:46+02:00] WAIT_FOR_PRODUCER_COMPLETION
+path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/required_effect_clean_validated_tidyexp_round2_n10_2026-04-20_080742/raw_runs/required_effect__retained_deferred__handling_gap_replayable__standard__rep05/artifacts/producer_complete.json
+[2026-04-20T09:11:52+02:00] WAIT_FOR_PRODUCER_COMPLETION_detected
+[2026-04-20T09:11:52+02:00] WAIT_FOR_RUN_COMPLETION
+sentinel_path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/required_effect_clean_validated_tidyexp_round2_n10_2026-04-20_080742/raw_runs/required_effect__retained_deferred__handling_gap_replayable__standard__rep05/artifacts/run_complete.json
+summary_path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/required_effect_clean_validated_tidyexp_round2_n10_2026-04-20_080742/raw_runs/required_effect__retained_deferred__handling_gap_replayable__standard__rep05/logs/consumer_summary.json
+[2026-04-20T09:11:54+02:00] completion_detected
+[2026-04-20T09:11:54+02:00] COMPOSE_LOGS
+
+=== COMPOSE_LOGS ===
+COMMAND: compose -f /home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/compose/docker-compose.yml --project-name required_effect__retained_deferred__handling_gap_replayable__standard_rep05 logs --no-color
+redis-1  | 1:C 20 Apr 2026 07:11:41.631 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1  | 1:C 20 Apr 2026 07:11:41.631 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1  | 1:C 20 Apr 2026 07:11:41.632 * Redis version=7.4.8, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1  | 1:C 20 Apr 2026 07:11:41.632 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis-1  | 1:M 20 Apr 2026 07:11:41.633 * monotonic clock: POSIX clock_gettime
+redis-1  | 1:M 20 Apr 2026 07:11:41.635 * Running mode=standalone, port=6379.
+redis-1  | 1:M 20 Apr 2026 07:11:41.636 * Server initialized
+redis-1  | 1:M 20 Apr 2026 07:11:41.636 * Ready to accept connections tcp
+producer-1  | 2026-04-20T07:11:46 producer starting delivery_mode=retained boundary=required_effect event_count=1000 disturbance=interruption start_delay=1.0
+producer-1  | 2026-04-20T07:11:52 producer finished produced_events=1000 produced_cases=1000
+consumer-1  | 2026-04-20T07:11:46 consumer starting delivery_mode=retained enforcement_timing=deferred boundary=required_effect disturbance=interruption
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=0 event_id=0 pending_count=1
+consumer-1  | 2026-04-20T07:11:47 consumer reconciliation_pass pending_before=1 reconciled=1 newly_attained=1 delayed_cases=0
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=1 event_id=1 pending_count=1
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=2 event_id=2 pending_count=2
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=3 event_id=3 pending_count=3
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=4 event_id=4 pending_count=4
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=5 event_id=5 pending_count=5
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=6 event_id=6 pending_count=6
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=7 event_id=7 pending_count=7
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=8 event_id=8 pending_count=8
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=9 event_id=9 pending_count=9
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=10 event_id=10 pending_count=10
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=11 event_id=11 pending_count=11
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=12 event_id=12 pending_count=12
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=13 event_id=13 pending_count=13
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=14 event_id=14 pending_count=14
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=15 event_id=15 pending_count=15
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=16 event_id=16 pending_count=16
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=17 event_id=17 pending_count=17
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=18 event_id=18 pending_count=18
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=19 event_id=19 pending_count=19
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=20 event_id=20 pending_count=20
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=21 event_id=21 pending_count=21
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=22 event_id=22 pending_count=22
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=23 event_id=23 pending_count=23
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=24 event_id=24 pending_count=24
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=25 event_id=25 pending_count=25
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=26 event_id=26 pending_count=26
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=27 event_id=27 pending_count=27
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=28 event_id=28 pending_count=28
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=29 event_id=29 pending_count=29
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=30 event_id=30 pending_count=30
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=31 event_id=31 pending_count=31
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=32 event_id=32 pending_count=32
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=33 event_id=33 pending_count=33
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=34 event_id=34 pending_count=34
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=35 event_id=35 pending_count=35
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=36 event_id=36 pending_count=36
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=37 event_id=37 pending_count=37
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=38 event_id=38 pending_count=38
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=39 event_id=39 pending_count=39
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=40 event_id=40 pending_count=40
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=41 event_id=41 pending_count=41
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=42 event_id=42 pending_count=42
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=43 event_id=43 pending_count=43
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=44 event_id=44 pending_count=44
+consumer-1  | 2026-04-20T07:11:47 consumer reconciliation_pass pending_before=44 reconciled=44 newly_attained=44 delayed_cases=0
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=45 event_id=45 pending_count=1
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=46 event_id=46 pending_count=2
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=47 event_id=47 pending_count=3
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=48 event_id=48 pending_count=4
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=49 event_id=49 pending_count=5
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=50 event_id=50 pending_count=6
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=51 event_id=51 pending_count=7
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=52 event_id=52 pending_count=8
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=53 event_id=53 pending_count=9
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=54 event_id=54 pending_count=10
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=55 event_id=55 pending_count=11
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=56 event_id=56 pending_count=12
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=57 event_id=57 pending_count=13
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=58 event_id=58 pending_count=14
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=59 event_id=59 pending_count=15
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=60 event_id=60 pending_count=16
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=61 event_id=61 pending_count=17
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=62 event_id=62 pending_count=18
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=63 event_id=63 pending_count=19
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=64 event_id=64 pending_count=20
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=65 event_id=65 pending_count=21
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=66 event_id=66 pending_count=22
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=67 event_id=67 pending_count=23
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=68 event_id=68 pending_count=24
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=69 event_id=69 pending_count=25
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=70 event_id=70 pending_count=26
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=71 event_id=71 pending_count=27
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=72 event_id=72 pending_count=28
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=73 event_id=73 pending_count=29
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=74 event_id=74 pending_count=30
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=75 event_id=75 pending_count=31
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=76 event_id=76 pending_count=32
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=77 event_id=77 pending_count=33
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=78 event_id=78 pending_count=34
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=79 event_id=79 pending_count=35
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=80 event_id=80 pending_count=36
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=81 event_id=81 pending_count=37
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=82 event_id=82 pending_count=38
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=83 event_id=83 pending_count=39
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=84 event_id=84 pending_count=40
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=85 event_id=85 pending_count=41
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=86 event_id=86 pending_count=42
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=87 event_id=87 pending_count=43
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=88 event_id=88 pending_count=44
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=89 event_id=89 pending_count=45
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=90 event_id=90 pending_count=46
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=91 event_id=91 pending_count=47
+consumer-1  | 2026-04-20T07:11:47 consumer reconciliation_pass pending_before=47 reconciled=47 newly_attained=47 delayed_cases=0
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=92 event_id=92 pending_count=1
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=93 event_id=93 pending_count=2
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=94 event_id=94 pending_count=3
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=95 event_id=95 pending_count=4
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=96 event_id=96 pending_count=5
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=97 event_id=97 pending_count=6
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=98 event_id=98 pending_count=7
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=99 event_id=99 pending_count=8
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=100 event_id=100 pending_count=9
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=101 event_id=101 pending_count=10
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=102 event_id=102 pending_count=11
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=103 event_id=103 pending_count=12
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=104 event_id=104 pending_count=13
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=105 event_id=105 pending_count=14
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=106 event_id=106 pending_count=15
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=107 event_id=107 pending_count=16
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=108 event_id=108 pending_count=17
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=109 event_id=109 pending_count=18
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=110 event_id=110 pending_count=19
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=111 event_id=111 pending_count=20
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=112 event_id=112 pending_count=21
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=113 event_id=113 pending_count=22
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=114 event_id=114 pending_count=23
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=115 event_id=115 pending_count=24
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=116 event_id=116 pending_count=25
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=117 event_id=117 pending_count=26
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=118 event_id=118 pending_count=27
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=119 event_id=119 pending_count=28
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=120 event_id=120 pending_count=29
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=121 event_id=121 pending_count=30
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=122 event_id=122 pending_count=31
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=123 event_id=123 pending_count=32
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=124 event_id=124 pending_count=33
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=125 event_id=125 pending_count=34
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=126 event_id=126 pending_count=35
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=127 event_id=127 pending_count=36
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=128 event_id=128 pending_count=37
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=129 event_id=129 pending_count=38
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=130 event_id=130 pending_count=39
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=131 event_id=131 pending_count=40
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=132 event_id=132 pending_count=41
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=133 event_id=133 pending_count=42
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=134 event_id=134 pending_count=43
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=135 event_id=135 pending_count=44
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=136 event_id=136 pending_count=45
+consumer-1  | 2026-04-20T07:11:47 consumer reconciliation_pass pending_before=45 reconciled=45 newly_attained=45 delayed_cases=0
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=137 event_id=137 pending_count=1
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=138 event_id=138 pending_count=2
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=139 event_id=139 pending_count=3
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=140 event_id=140 pending_count=4
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=141 event_id=141 pending_count=5
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=142 event_id=142 pending_count=6
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=143 event_id=143 pending_count=7
+consumer-1  | 2026-04-20T07:11:47 consumer pending_recorded case_id=144 event_id=144 pending_count=8
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=145 event_id=145 pending_count=9
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=146 event_id=146 pending_count=10
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=147 event_id=147 pending_count=11
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=148 event_id=148 pending_count=12
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=149 event_id=149 pending_count=13
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=150 event_id=150 pending_count=14
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=151 event_id=151 pending_count=15
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=152 event_id=152 pending_count=16
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=153 event_id=153 pending_count=17
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=154 event_id=154 pending_count=18
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=155 event_id=155 pending_count=19
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=156 event_id=156 pending_count=20
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=157 event_id=157 pending_count=21
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=158 event_id=158 pending_count=22
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=159 event_id=159 pending_count=23
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=160 event_id=160 pending_count=24
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=161 event_id=161 pending_count=25
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=162 event_id=162 pending_count=26
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=163 event_id=163 pending_count=27
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=164 event_id=164 pending_count=28
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=165 event_id=165 pending_count=29
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=166 event_id=166 pending_count=30
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=167 event_id=167 pending_count=31
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=168 event_id=168 pending_count=32
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=169 event_id=169 pending_count=33
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=170 event_id=170 pending_count=34
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=171 event_id=171 pending_count=35
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=172 event_id=172 pending_count=36
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=173 event_id=173 pending_count=37
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=174 event_id=174 pending_count=38
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=175 event_id=175 pending_count=39
+consumer-1  | 2026-04-20T07:11:48 consumer pending_recorded case_id=176 event_id=176 pending_count=40
+consumer-1  | 2026-04-20T07:11:48 consumer interruption_active mode=time_seconds reason=elapsed_seconds>=2.0 duration=3.500
+consumer-1  | 2026-04-20T07:11:51 consumer reconciliation_pass pending_before=40 reconciled=40 newly_attained=40 delayed_cases=0
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=177 event_id=177 pending_count=1
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=178 event_id=178 pending_count=2
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=179 event_id=179 pending_count=3
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=180 event_id=180 pending_count=4
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=181 event_id=181 pending_count=5
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=182 event_id=182 pending_count=6
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=183 event_id=183 pending_count=7
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=184 event_id=184 pending_count=8
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=185 event_id=185 pending_count=9
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=186 event_id=186 pending_count=10
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=187 event_id=187 pending_count=11
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=188 event_id=188 pending_count=12
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=189 event_id=189 pending_count=13
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=190 event_id=190 pending_count=14
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=191 event_id=191 pending_count=15
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=192 event_id=192 pending_count=16
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=193 event_id=193 pending_count=17
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=194 event_id=194 pending_count=18
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=195 event_id=195 pending_count=19
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=196 event_id=196 pending_count=20
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=197 event_id=197 pending_count=21
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=198 event_id=198 pending_count=22
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=199 event_id=199 pending_count=23
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=200 event_id=200 pending_count=24
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=201 event_id=201 pending_count=25
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=202 event_id=202 pending_count=26
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=203 event_id=203 pending_count=27
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=204 event_id=204 pending_count=28
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=205 event_id=205 pending_count=29
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=206 event_id=206 pending_count=30
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=207 event_id=207 pending_count=31
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=208 event_id=208 pending_count=32
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=209 event_id=209 pending_count=33
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=210 event_id=210 pending_count=34
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=211 event_id=211 pending_count=35
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=212 event_id=212 pending_count=36
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=213 event_id=213 pending_count=37
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=214 event_id=214 pending_count=38
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=215 event_id=215 pending_count=39
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=216 event_id=216 pending_count=40
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=217 event_id=217 pending_count=41
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=218 event_id=218 pending_count=42
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=219 event_id=219 pending_count=43
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=220 event_id=220 pending_count=44
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=221 event_id=221 pending_count=45
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=222 event_id=222 pending_count=46
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=223 event_id=223 pending_count=47
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=224 event_id=224 pending_count=48
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=225 event_id=225 pending_count=49
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=226 event_id=226 pending_count=50
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=227 event_id=227 pending_count=51
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=228 event_id=228 pending_count=52
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=229 event_id=229 pending_count=53
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=230 event_id=230 pending_count=54
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=231 event_id=231 pending_count=55
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=232 event_id=232 pending_count=56
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=233 event_id=233 pending_count=57
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=234 event_id=234 pending_count=58
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=235 event_id=235 pending_count=59
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=236 event_id=236 pending_count=60
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=237 event_id=237 pending_count=61
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=238 event_id=238 pending_count=62
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=239 event_id=239 pending_count=63
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=240 event_id=240 pending_count=64
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=241 event_id=241 pending_count=65
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=242 event_id=242 pending_count=66
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=243 event_id=243 pending_count=67
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=244 event_id=244 pending_count=68
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=245 event_id=245 pending_count=69
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=246 event_id=246 pending_count=70
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=247 event_id=247 pending_count=71
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=248 event_id=248 pending_count=72
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=249 event_id=249 pending_count=73
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=250 event_id=250 pending_count=74
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=251 event_id=251 pending_count=75
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=252 event_id=252 pending_count=76
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=253 event_id=253 pending_count=77
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=254 event_id=254 pending_count=78
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=255 event_id=255 pending_count=79
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=256 event_id=256 pending_count=80
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=257 event_id=257 pending_count=81
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=258 event_id=258 pending_count=82
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=259 event_id=259 pending_count=83
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=260 event_id=260 pending_count=84
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=261 event_id=261 pending_count=85
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=262 event_id=262 pending_count=86
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=263 event_id=263 pending_count=87
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=264 event_id=264 pending_count=88
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=265 event_id=265 pending_count=89
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=266 event_id=266 pending_count=90
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=267 event_id=267 pending_count=91
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=268 event_id=268 pending_count=92
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=269 event_id=269 pending_count=93
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=270 event_id=270 pending_count=94
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=271 event_id=271 pending_count=95
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=272 event_id=272 pending_count=96
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=273 event_id=273 pending_count=97
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=274 event_id=274 pending_count=98
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=275 event_id=275 pending_count=99
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=276 event_id=276 pending_count=100
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=277 event_id=277 pending_count=101
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=278 event_id=278 pending_count=102
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=279 event_id=279 pending_count=103
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=280 event_id=280 pending_count=104
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=281 event_id=281 pending_count=105
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=282 event_id=282 pending_count=106
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=283 event_id=283 pending_count=107
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=284 event_id=284 pending_count=108
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=285 event_id=285 pending_count=109
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=286 event_id=286 pending_count=110
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=287 event_id=287 pending_count=111
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=288 event_id=288 pending_count=112
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=289 event_id=289 pending_count=113
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=290 event_id=290 pending_count=114
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=291 event_id=291 pending_count=115
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=292 event_id=292 pending_count=116
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=293 event_id=293 pending_count=117
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=294 event_id=294 pending_count=118
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=295 event_id=295 pending_count=119
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=296 event_id=296 pending_count=120
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=297 event_id=297 pending_count=121
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=298 event_id=298 pending_count=122
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=299 event_id=299 pending_count=123
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=300 event_id=300 pending_count=124
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=301 event_id=301 pending_count=125
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=302 event_id=302 pending_count=126
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=303 event_id=303 pending_count=127
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=304 event_id=304 pending_count=128
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=305 event_id=305 pending_count=129
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=306 event_id=306 pending_count=130
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=307 event_id=307 pending_count=131
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=308 event_id=308 pending_count=132
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=309 event_id=309 pending_count=133
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=310 event_id=310 pending_count=134
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=311 event_id=311 pending_count=135
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=312 event_id=312 pending_count=136
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=313 event_id=313 pending_count=137
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=314 event_id=314 pending_count=138
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=315 event_id=315 pending_count=139
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=316 event_id=316 pending_count=140
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=317 event_id=317 pending_count=141
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=318 event_id=318 pending_count=142
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=319 event_id=319 pending_count=143
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=320 event_id=320 pending_count=144
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=321 event_id=321 pending_count=145
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=322 event_id=322 pending_count=146
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=323 event_id=323 pending_count=147
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=324 event_id=324 pending_count=148
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=325 event_id=325 pending_count=149
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=326 event_id=326 pending_count=150
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=327 event_id=327 pending_count=151
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=328 event_id=328 pending_count=152
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=329 event_id=329 pending_count=153
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=330 event_id=330 pending_count=154
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=331 event_id=331 pending_count=155
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=332 event_id=332 pending_count=156
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=333 event_id=333 pending_count=157
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=334 event_id=334 pending_count=158
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=335 event_id=335 pending_count=159
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=336 event_id=336 pending_count=160
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=337 event_id=337 pending_count=161
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=338 event_id=338 pending_count=162
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=339 event_id=339 pending_count=163
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=340 event_id=340 pending_count=164
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=341 event_id=341 pending_count=165
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=342 event_id=342 pending_count=166
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=343 event_id=343 pending_count=167
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=344 event_id=344 pending_count=168
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=345 event_id=345 pending_count=169
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=346 event_id=346 pending_count=170
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=347 event_id=347 pending_count=171
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=348 event_id=348 pending_count=172
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=349 event_id=349 pending_count=173
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=350 event_id=350 pending_count=174
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=351 event_id=351 pending_count=175
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=352 event_id=352 pending_count=176
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=353 event_id=353 pending_count=177
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=354 event_id=354 pending_count=178
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=355 event_id=355 pending_count=179
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=356 event_id=356 pending_count=180
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=357 event_id=357 pending_count=181
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=358 event_id=358 pending_count=182
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=359 event_id=359 pending_count=183
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=360 event_id=360 pending_count=184
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=361 event_id=361 pending_count=185
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=362 event_id=362 pending_count=186
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=363 event_id=363 pending_count=187
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=364 event_id=364 pending_count=188
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=365 event_id=365 pending_count=189
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=366 event_id=366 pending_count=190
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=367 event_id=367 pending_count=191
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=368 event_id=368 pending_count=192
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=369 event_id=369 pending_count=193
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=370 event_id=370 pending_count=194
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=371 event_id=371 pending_count=195
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=372 event_id=372 pending_count=196
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=373 event_id=373 pending_count=197
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=374 event_id=374 pending_count=198
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=375 event_id=375 pending_count=199
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=376 event_id=376 pending_count=200
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=377 event_id=377 pending_count=201
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=378 event_id=378 pending_count=202
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=379 event_id=379 pending_count=203
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=380 event_id=380 pending_count=204
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=381 event_id=381 pending_count=205
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=382 event_id=382 pending_count=206
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=383 event_id=383 pending_count=207
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=384 event_id=384 pending_count=208
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=385 event_id=385 pending_count=209
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=386 event_id=386 pending_count=210
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=387 event_id=387 pending_count=211
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=388 event_id=388 pending_count=212
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=389 event_id=389 pending_count=213
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=390 event_id=390 pending_count=214
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=391 event_id=391 pending_count=215
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=392 event_id=392 pending_count=216
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=393 event_id=393 pending_count=217
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=394 event_id=394 pending_count=218
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=395 event_id=395 pending_count=219
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=396 event_id=396 pending_count=220
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=397 event_id=397 pending_count=221
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=398 event_id=398 pending_count=222
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=399 event_id=399 pending_count=223
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=400 event_id=400 pending_count=224
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=401 event_id=401 pending_count=225
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=402 event_id=402 pending_count=226
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=403 event_id=403 pending_count=227
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=404 event_id=404 pending_count=228
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=405 event_id=405 pending_count=229
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=406 event_id=406 pending_count=230
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=407 event_id=407 pending_count=231
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=408 event_id=408 pending_count=232
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=409 event_id=409 pending_count=233
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=410 event_id=410 pending_count=234
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=411 event_id=411 pending_count=235
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=412 event_id=412 pending_count=236
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=413 event_id=413 pending_count=237
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=414 event_id=414 pending_count=238
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=415 event_id=415 pending_count=239
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=416 event_id=416 pending_count=240
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=417 event_id=417 pending_count=241
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=418 event_id=418 pending_count=242
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=419 event_id=419 pending_count=243
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=420 event_id=420 pending_count=244
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=421 event_id=421 pending_count=245
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=422 event_id=422 pending_count=246
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=423 event_id=423 pending_count=247
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=424 event_id=424 pending_count=248
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=425 event_id=425 pending_count=249
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=426 event_id=426 pending_count=250
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=427 event_id=427 pending_count=251
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=428 event_id=428 pending_count=252
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=429 event_id=429 pending_count=253
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=430 event_id=430 pending_count=254
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=431 event_id=431 pending_count=255
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=432 event_id=432 pending_count=256
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=433 event_id=433 pending_count=257
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=434 event_id=434 pending_count=258
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=435 event_id=435 pending_count=259
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=436 event_id=436 pending_count=260
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=437 event_id=437 pending_count=261
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=438 event_id=438 pending_count=262
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=439 event_id=439 pending_count=263
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=440 event_id=440 pending_count=264
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=441 event_id=441 pending_count=265
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=442 event_id=442 pending_count=266
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=443 event_id=443 pending_count=267
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=444 event_id=444 pending_count=268
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=445 event_id=445 pending_count=269
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=446 event_id=446 pending_count=270
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=447 event_id=447 pending_count=271
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=448 event_id=448 pending_count=272
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=449 event_id=449 pending_count=273
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=450 event_id=450 pending_count=274
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=451 event_id=451 pending_count=275
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=452 event_id=452 pending_count=276
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=453 event_id=453 pending_count=277
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=454 event_id=454 pending_count=278
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=455 event_id=455 pending_count=279
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=456 event_id=456 pending_count=280
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=457 event_id=457 pending_count=281
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=458 event_id=458 pending_count=282
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=459 event_id=459 pending_count=283
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=460 event_id=460 pending_count=284
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=461 event_id=461 pending_count=285
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=462 event_id=462 pending_count=286
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=463 event_id=463 pending_count=287
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=464 event_id=464 pending_count=288
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=465 event_id=465 pending_count=289
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=466 event_id=466 pending_count=290
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=467 event_id=467 pending_count=291
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=468 event_id=468 pending_count=292
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=469 event_id=469 pending_count=293
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=470 event_id=470 pending_count=294
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=471 event_id=471 pending_count=295
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=472 event_id=472 pending_count=296
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=473 event_id=473 pending_count=297
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=474 event_id=474 pending_count=298
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=475 event_id=475 pending_count=299
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=476 event_id=476 pending_count=300
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=477 event_id=477 pending_count=301
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=478 event_id=478 pending_count=302
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=479 event_id=479 pending_count=303
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=480 event_id=480 pending_count=304
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=481 event_id=481 pending_count=305
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=482 event_id=482 pending_count=306
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=483 event_id=483 pending_count=307
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=484 event_id=484 pending_count=308
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=485 event_id=485 pending_count=309
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=486 event_id=486 pending_count=310
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=487 event_id=487 pending_count=311
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=488 event_id=488 pending_count=312
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=489 event_id=489 pending_count=313
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=490 event_id=490 pending_count=314
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=491 event_id=491 pending_count=315
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=492 event_id=492 pending_count=316
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=493 event_id=493 pending_count=317
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=494 event_id=494 pending_count=318
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=495 event_id=495 pending_count=319
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=496 event_id=496 pending_count=320
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=497 event_id=497 pending_count=321
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=498 event_id=498 pending_count=322
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=499 event_id=499 pending_count=323
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=500 event_id=500 pending_count=324
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=501 event_id=501 pending_count=325
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=502 event_id=502 pending_count=326
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=503 event_id=503 pending_count=327
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=504 event_id=504 pending_count=328
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=505 event_id=505 pending_count=329
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=506 event_id=506 pending_count=330
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=507 event_id=507 pending_count=331
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=508 event_id=508 pending_count=332
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=509 event_id=509 pending_count=333
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=510 event_id=510 pending_count=334
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=511 event_id=511 pending_count=335
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=512 event_id=512 pending_count=336
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=513 event_id=513 pending_count=337
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=514 event_id=514 pending_count=338
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=515 event_id=515 pending_count=339
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=516 event_id=516 pending_count=340
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=517 event_id=517 pending_count=341
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=518 event_id=518 pending_count=342
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=519 event_id=519 pending_count=343
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=520 event_id=520 pending_count=344
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=521 event_id=521 pending_count=345
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=522 event_id=522 pending_count=346
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=523 event_id=523 pending_count=347
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=524 event_id=524 pending_count=348
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=525 event_id=525 pending_count=349
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=526 event_id=526 pending_count=350
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=527 event_id=527 pending_count=351
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=528 event_id=528 pending_count=352
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=529 event_id=529 pending_count=353
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=530 event_id=530 pending_count=354
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=531 event_id=531 pending_count=355
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=532 event_id=532 pending_count=356
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=533 event_id=533 pending_count=357
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=534 event_id=534 pending_count=358
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=535 event_id=535 pending_count=359
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=536 event_id=536 pending_count=360
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=537 event_id=537 pending_count=361
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=538 event_id=538 pending_count=362
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=539 event_id=539 pending_count=363
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=540 event_id=540 pending_count=364
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=541 event_id=541 pending_count=365
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=542 event_id=542 pending_count=366
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=543 event_id=543 pending_count=367
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=544 event_id=544 pending_count=368
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=545 event_id=545 pending_count=369
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=546 event_id=546 pending_count=370
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=547 event_id=547 pending_count=371
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=548 event_id=548 pending_count=372
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=549 event_id=549 pending_count=373
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=550 event_id=550 pending_count=374
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=551 event_id=551 pending_count=375
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=552 event_id=552 pending_count=376
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=553 event_id=553 pending_count=377
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=554 event_id=554 pending_count=378
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=555 event_id=555 pending_count=379
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=556 event_id=556 pending_count=380
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=557 event_id=557 pending_count=381
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=558 event_id=558 pending_count=382
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=559 event_id=559 pending_count=383
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=560 event_id=560 pending_count=384
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=561 event_id=561 pending_count=385
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=562 event_id=562 pending_count=386
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=563 event_id=563 pending_count=387
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=564 event_id=564 pending_count=388
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=565 event_id=565 pending_count=389
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=566 event_id=566 pending_count=390
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=567 event_id=567 pending_count=391
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=568 event_id=568 pending_count=392
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=569 event_id=569 pending_count=393
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=570 event_id=570 pending_count=394
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=571 event_id=571 pending_count=395
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=572 event_id=572 pending_count=396
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=573 event_id=573 pending_count=397
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=574 event_id=574 pending_count=398
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=575 event_id=575 pending_count=399
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=576 event_id=576 pending_count=400
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=577 event_id=577 pending_count=401
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=578 event_id=578 pending_count=402
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=579 event_id=579 pending_count=403
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=580 event_id=580 pending_count=404
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=581 event_id=581 pending_count=405
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=582 event_id=582 pending_count=406
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=583 event_id=583 pending_count=407
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=584 event_id=584 pending_count=408
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=585 event_id=585 pending_count=409
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=586 event_id=586 pending_count=410
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=587 event_id=587 pending_count=411
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=588 event_id=588 pending_count=412
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=589 event_id=589 pending_count=413
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=590 event_id=590 pending_count=414
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=591 event_id=591 pending_count=415
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=592 event_id=592 pending_count=416
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=593 event_id=593 pending_count=417
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=594 event_id=594 pending_count=418
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=595 event_id=595 pending_count=419
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=596 event_id=596 pending_count=420
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=597 event_id=597 pending_count=421
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=598 event_id=598 pending_count=422
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=599 event_id=599 pending_count=423
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=600 event_id=600 pending_count=424
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=601 event_id=601 pending_count=425
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=602 event_id=602 pending_count=426
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=603 event_id=603 pending_count=427
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=604 event_id=604 pending_count=428
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=605 event_id=605 pending_count=429
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=606 event_id=606 pending_count=430
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=607 event_id=607 pending_count=431
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=608 event_id=608 pending_count=432
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=609 event_id=609 pending_count=433
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=610 event_id=610 pending_count=434
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=611 event_id=611 pending_count=435
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=612 event_id=612 pending_count=436
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=613 event_id=613 pending_count=437
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=614 event_id=614 pending_count=438
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=615 event_id=615 pending_count=439
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=616 event_id=616 pending_count=440
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=617 event_id=617 pending_count=441
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=618 event_id=618 pending_count=442
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=619 event_id=619 pending_count=443
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=620 event_id=620 pending_count=444
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=621 event_id=621 pending_count=445
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=622 event_id=622 pending_count=446
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=623 event_id=623 pending_count=447
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=624 event_id=624 pending_count=448
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=625 event_id=625 pending_count=449
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=626 event_id=626 pending_count=450
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=627 event_id=627 pending_count=451
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=628 event_id=628 pending_count=452
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=629 event_id=629 pending_count=453
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=630 event_id=630 pending_count=454
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=631 event_id=631 pending_count=455
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=632 event_id=632 pending_count=456
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=633 event_id=633 pending_count=457
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=634 event_id=634 pending_count=458
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=635 event_id=635 pending_count=459
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=636 event_id=636 pending_count=460
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=637 event_id=637 pending_count=461
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=638 event_id=638 pending_count=462
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=639 event_id=639 pending_count=463
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=640 event_id=640 pending_count=464
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=641 event_id=641 pending_count=465
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=642 event_id=642 pending_count=466
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=643 event_id=643 pending_count=467
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=644 event_id=644 pending_count=468
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=645 event_id=645 pending_count=469
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=646 event_id=646 pending_count=470
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=647 event_id=647 pending_count=471
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=648 event_id=648 pending_count=472
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=649 event_id=649 pending_count=473
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=650 event_id=650 pending_count=474
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=651 event_id=651 pending_count=475
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=652 event_id=652 pending_count=476
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=653 event_id=653 pending_count=477
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=654 event_id=654 pending_count=478
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=655 event_id=655 pending_count=479
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=656 event_id=656 pending_count=480
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=657 event_id=657 pending_count=481
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=658 event_id=658 pending_count=482
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=659 event_id=659 pending_count=483
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=660 event_id=660 pending_count=484
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=661 event_id=661 pending_count=485
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=662 event_id=662 pending_count=486
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=663 event_id=663 pending_count=487
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=664 event_id=664 pending_count=488
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=665 event_id=665 pending_count=489
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=666 event_id=666 pending_count=490
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=667 event_id=667 pending_count=491
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=668 event_id=668 pending_count=492
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=669 event_id=669 pending_count=493
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=670 event_id=670 pending_count=494
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=671 event_id=671 pending_count=495
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=672 event_id=672 pending_count=496
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=673 event_id=673 pending_count=497
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=674 event_id=674 pending_count=498
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=675 event_id=675 pending_count=499
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=676 event_id=676 pending_count=500
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=677 event_id=677 pending_count=501
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=678 event_id=678 pending_count=502
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=679 event_id=679 pending_count=503
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=680 event_id=680 pending_count=504
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=681 event_id=681 pending_count=505
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=682 event_id=682 pending_count=506
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=683 event_id=683 pending_count=507
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=684 event_id=684 pending_count=508
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=685 event_id=685 pending_count=509
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=686 event_id=686 pending_count=510
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=687 event_id=687 pending_count=511
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=688 event_id=688 pending_count=512
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=689 event_id=689 pending_count=513
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=690 event_id=690 pending_count=514
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=691 event_id=691 pending_count=515
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=692 event_id=692 pending_count=516
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=693 event_id=693 pending_count=517
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=694 event_id=694 pending_count=518
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=695 event_id=695 pending_count=519
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=696 event_id=696 pending_count=520
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=697 event_id=697 pending_count=521
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=698 event_id=698 pending_count=522
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=699 event_id=699 pending_count=523
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=700 event_id=700 pending_count=524
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=701 event_id=701 pending_count=525
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=702 event_id=702 pending_count=526
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=703 event_id=703 pending_count=527
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=704 event_id=704 pending_count=528
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=705 event_id=705 pending_count=529
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=706 event_id=706 pending_count=530
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=707 event_id=707 pending_count=531
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=708 event_id=708 pending_count=532
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=709 event_id=709 pending_count=533
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=710 event_id=710 pending_count=534
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=711 event_id=711 pending_count=535
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=712 event_id=712 pending_count=536
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=713 event_id=713 pending_count=537
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=714 event_id=714 pending_count=538
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=715 event_id=715 pending_count=539
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=716 event_id=716 pending_count=540
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=717 event_id=717 pending_count=541
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=718 event_id=718 pending_count=542
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=719 event_id=719 pending_count=543
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=720 event_id=720 pending_count=544
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=721 event_id=721 pending_count=545
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=722 event_id=722 pending_count=546
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=723 event_id=723 pending_count=547
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=724 event_id=724 pending_count=548
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=725 event_id=725 pending_count=549
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=726 event_id=726 pending_count=550
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=727 event_id=727 pending_count=551
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=728 event_id=728 pending_count=552
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=729 event_id=729 pending_count=553
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=730 event_id=730 pending_count=554
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=731 event_id=731 pending_count=555
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=732 event_id=732 pending_count=556
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=733 event_id=733 pending_count=557
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=734 event_id=734 pending_count=558
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=735 event_id=735 pending_count=559
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=736 event_id=736 pending_count=560
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=737 event_id=737 pending_count=561
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=738 event_id=738 pending_count=562
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=739 event_id=739 pending_count=563
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=740 event_id=740 pending_count=564
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=741 event_id=741 pending_count=565
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=742 event_id=742 pending_count=566
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=743 event_id=743 pending_count=567
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=744 event_id=744 pending_count=568
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=745 event_id=745 pending_count=569
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=746 event_id=746 pending_count=570
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=747 event_id=747 pending_count=571
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=748 event_id=748 pending_count=572
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=749 event_id=749 pending_count=573
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=750 event_id=750 pending_count=574
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=751 event_id=751 pending_count=575
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=752 event_id=752 pending_count=576
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=753 event_id=753 pending_count=577
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=754 event_id=754 pending_count=578
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=755 event_id=755 pending_count=579
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=756 event_id=756 pending_count=580
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=757 event_id=757 pending_count=581
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=758 event_id=758 pending_count=582
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=759 event_id=759 pending_count=583
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=760 event_id=760 pending_count=584
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=761 event_id=761 pending_count=585
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=762 event_id=762 pending_count=586
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=763 event_id=763 pending_count=587
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=764 event_id=764 pending_count=588
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=765 event_id=765 pending_count=589
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=766 event_id=766 pending_count=590
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=767 event_id=767 pending_count=591
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=768 event_id=768 pending_count=592
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=769 event_id=769 pending_count=593
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=770 event_id=770 pending_count=594
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=771 event_id=771 pending_count=595
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=772 event_id=772 pending_count=596
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=773 event_id=773 pending_count=597
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=774 event_id=774 pending_count=598
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=775 event_id=775 pending_count=599
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=776 event_id=776 pending_count=600
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=777 event_id=777 pending_count=601
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=778 event_id=778 pending_count=602
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=779 event_id=779 pending_count=603
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=780 event_id=780 pending_count=604
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=781 event_id=781 pending_count=605
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=782 event_id=782 pending_count=606
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=783 event_id=783 pending_count=607
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=784 event_id=784 pending_count=608
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=785 event_id=785 pending_count=609
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=786 event_id=786 pending_count=610
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=787 event_id=787 pending_count=611
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=788 event_id=788 pending_count=612
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=789 event_id=789 pending_count=613
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=790 event_id=790 pending_count=614
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=791 event_id=791 pending_count=615
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=792 event_id=792 pending_count=616
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=793 event_id=793 pending_count=617
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=794 event_id=794 pending_count=618
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=795 event_id=795 pending_count=619
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=796 event_id=796 pending_count=620
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=797 event_id=797 pending_count=621
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=798 event_id=798 pending_count=622
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=799 event_id=799 pending_count=623
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=800 event_id=800 pending_count=624
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=801 event_id=801 pending_count=625
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=802 event_id=802 pending_count=626
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=803 event_id=803 pending_count=627
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=804 event_id=804 pending_count=628
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=805 event_id=805 pending_count=629
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=806 event_id=806 pending_count=630
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=807 event_id=807 pending_count=631
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=808 event_id=808 pending_count=632
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=809 event_id=809 pending_count=633
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=810 event_id=810 pending_count=634
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=811 event_id=811 pending_count=635
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=812 event_id=812 pending_count=636
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=813 event_id=813 pending_count=637
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=814 event_id=814 pending_count=638
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=815 event_id=815 pending_count=639
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=816 event_id=816 pending_count=640
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=817 event_id=817 pending_count=641
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=818 event_id=818 pending_count=642
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=819 event_id=819 pending_count=643
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=820 event_id=820 pending_count=644
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=821 event_id=821 pending_count=645
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=822 event_id=822 pending_count=646
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=823 event_id=823 pending_count=647
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=824 event_id=824 pending_count=648
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=825 event_id=825 pending_count=649
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=826 event_id=826 pending_count=650
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=827 event_id=827 pending_count=651
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=828 event_id=828 pending_count=652
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=829 event_id=829 pending_count=653
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=830 event_id=830 pending_count=654
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=831 event_id=831 pending_count=655
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=832 event_id=832 pending_count=656
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=833 event_id=833 pending_count=657
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=834 event_id=834 pending_count=658
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=835 event_id=835 pending_count=659
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=836 event_id=836 pending_count=660
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=837 event_id=837 pending_count=661
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=838 event_id=838 pending_count=662
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=839 event_id=839 pending_count=663
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=840 event_id=840 pending_count=664
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=841 event_id=841 pending_count=665
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=842 event_id=842 pending_count=666
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=843 event_id=843 pending_count=667
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=844 event_id=844 pending_count=668
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=845 event_id=845 pending_count=669
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=846 event_id=846 pending_count=670
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=847 event_id=847 pending_count=671
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=848 event_id=848 pending_count=672
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=849 event_id=849 pending_count=673
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=850 event_id=850 pending_count=674
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=851 event_id=851 pending_count=675
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=852 event_id=852 pending_count=676
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=853 event_id=853 pending_count=677
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=854 event_id=854 pending_count=678
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=855 event_id=855 pending_count=679
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=856 event_id=856 pending_count=680
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=857 event_id=857 pending_count=681
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=858 event_id=858 pending_count=682
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=859 event_id=859 pending_count=683
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=860 event_id=860 pending_count=684
+consumer-1  | 2026-04-20T07:11:51 consumer pending_recorded case_id=861 event_id=861 pending_count=685
+consumer-1  | 2026-04-20T07:11:52 consumer reconciliation_pass pending_before=685 reconciled=685 newly_attained=685 delayed_cases=0
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=862 event_id=862 pending_count=1
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=863 event_id=863 pending_count=2
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=864 event_id=864 pending_count=3
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=865 event_id=865 pending_count=4
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=866 event_id=866 pending_count=5
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=867 event_id=867 pending_count=6
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=868 event_id=868 pending_count=7
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=869 event_id=869 pending_count=8
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=870 event_id=870 pending_count=9
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=871 event_id=871 pending_count=10
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=872 event_id=872 pending_count=11
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=873 event_id=873 pending_count=12
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=874 event_id=874 pending_count=13
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=875 event_id=875 pending_count=14
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=876 event_id=876 pending_count=15
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=877 event_id=877 pending_count=16
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=878 event_id=878 pending_count=17
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=879 event_id=879 pending_count=18
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=880 event_id=880 pending_count=19
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=881 event_id=881 pending_count=20
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=882 event_id=882 pending_count=21
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=883 event_id=883 pending_count=22
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=884 event_id=884 pending_count=23
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=885 event_id=885 pending_count=24
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=886 event_id=886 pending_count=25
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=887 event_id=887 pending_count=26
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=888 event_id=888 pending_count=27
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=889 event_id=889 pending_count=28
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=890 event_id=890 pending_count=29
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=891 event_id=891 pending_count=30
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=892 event_id=892 pending_count=31
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=893 event_id=893 pending_count=32
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=894 event_id=894 pending_count=33
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=895 event_id=895 pending_count=34
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=896 event_id=896 pending_count=35
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=897 event_id=897 pending_count=36
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=898 event_id=898 pending_count=37
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=899 event_id=899 pending_count=38
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=900 event_id=900 pending_count=39
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=901 event_id=901 pending_count=40
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=902 event_id=902 pending_count=41
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=903 event_id=903 pending_count=42
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=904 event_id=904 pending_count=43
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=905 event_id=905 pending_count=44
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=906 event_id=906 pending_count=45
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=907 event_id=907 pending_count=46
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=908 event_id=908 pending_count=47
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=909 event_id=909 pending_count=48
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=910 event_id=910 pending_count=49
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=911 event_id=911 pending_count=50
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=912 event_id=912 pending_count=51
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=913 event_id=913 pending_count=52
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=914 event_id=914 pending_count=53
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=915 event_id=915 pending_count=54
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=916 event_id=916 pending_count=55
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=917 event_id=917 pending_count=56
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=918 event_id=918 pending_count=57
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=919 event_id=919 pending_count=58
+consumer-1  | 2026-04-20T07:11:52 consumer reconciliation_pass pending_before=58 reconciled=58 newly_attained=58 delayed_cases=0
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=920 event_id=920 pending_count=1
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=921 event_id=921 pending_count=2
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=922 event_id=922 pending_count=3
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=923 event_id=923 pending_count=4
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=924 event_id=924 pending_count=5
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=925 event_id=925 pending_count=6
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=926 event_id=926 pending_count=7
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=927 event_id=927 pending_count=8
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=928 event_id=928 pending_count=9
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=929 event_id=929 pending_count=10
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=930 event_id=930 pending_count=11
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=931 event_id=931 pending_count=12
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=932 event_id=932 pending_count=13
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=933 event_id=933 pending_count=14
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=934 event_id=934 pending_count=15
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=935 event_id=935 pending_count=16
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=936 event_id=936 pending_count=17
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=937 event_id=937 pending_count=18
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=938 event_id=938 pending_count=19
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=939 event_id=939 pending_count=20
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=940 event_id=940 pending_count=21
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=941 event_id=941 pending_count=22
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=942 event_id=942 pending_count=23
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=943 event_id=943 pending_count=24
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=944 event_id=944 pending_count=25
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=945 event_id=945 pending_count=26
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=946 event_id=946 pending_count=27
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=947 event_id=947 pending_count=28
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=948 event_id=948 pending_count=29
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=949 event_id=949 pending_count=30
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=950 event_id=950 pending_count=31
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=951 event_id=951 pending_count=32
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=952 event_id=952 pending_count=33
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=953 event_id=953 pending_count=34
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=954 event_id=954 pending_count=35
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=955 event_id=955 pending_count=36
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=956 event_id=956 pending_count=37
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=957 event_id=957 pending_count=38
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=958 event_id=958 pending_count=39
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=959 event_id=959 pending_count=40
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=960 event_id=960 pending_count=41
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=961 event_id=961 pending_count=42
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=962 event_id=962 pending_count=43
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=963 event_id=963 pending_count=44
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=964 event_id=964 pending_count=45
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=965 event_id=965 pending_count=46
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=966 event_id=966 pending_count=47
+consumer-1  | 2026-04-20T07:11:52 consumer reconciliation_pass pending_before=47 reconciled=47 newly_attained=47 delayed_cases=0
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=967 event_id=967 pending_count=1
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=968 event_id=968 pending_count=2
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=969 event_id=969 pending_count=3
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=970 event_id=970 pending_count=4
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=971 event_id=971 pending_count=5
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=972 event_id=972 pending_count=6
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=973 event_id=973 pending_count=7
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=974 event_id=974 pending_count=8
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=975 event_id=975 pending_count=9
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=976 event_id=976 pending_count=10
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=977 event_id=977 pending_count=11
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=978 event_id=978 pending_count=12
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=979 event_id=979 pending_count=13
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=980 event_id=980 pending_count=14
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=981 event_id=981 pending_count=15
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=982 event_id=982 pending_count=16
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=983 event_id=983 pending_count=17
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=984 event_id=984 pending_count=18
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=985 event_id=985 pending_count=19
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=986 event_id=986 pending_count=20
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=987 event_id=987 pending_count=21
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=988 event_id=988 pending_count=22
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=989 event_id=989 pending_count=23
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=990 event_id=990 pending_count=24
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=991 event_id=991 pending_count=25
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=992 event_id=992 pending_count=26
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=993 event_id=993 pending_count=27
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=994 event_id=994 pending_count=28
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=995 event_id=995 pending_count=29
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=996 event_id=996 pending_count=30
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=997 event_id=997 pending_count=31
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=998 event_id=998 pending_count=32
+consumer-1  | 2026-04-20T07:11:52 consumer pending_recorded case_id=999 event_id=999 pending_count=33
+consumer-1  | 2026-04-20T07:11:52 consumer producer_complete_seen emitted_hint=1000 logical_hint=1000 seen_elapsed=6.716008
+consumer-1  | 2026-04-20T07:11:52 consumer reconciliation_pass pending_before=33 reconciled=33 newly_attained=33 delayed_cases=0
+consumer-1  | 2026-04-20T07:11:54 consumer drain_complete processed=1000 emitted_hint=1000 logical_hint=1000 quiet_for=2.026
+[2026-04-20T09:11:55+02:00] run_finished
+[2026-04-20T09:11:55+02:00] COMPOSE_DOWN
+
+=== COMPOSE_DOWN ===
+COMMAND: compose -f /home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/compose/docker-compose.yml --project-name required_effect__retained_deferred__handling_gap_replayable__standard_rep05 down -v --remove-orphans
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer-1 Stopping 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer-1 Stopping 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer-1 Stopped 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer-1 Removing 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer-1 Stopped 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer-1 Removing 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-producer-1 Removed 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-consumer-1 Removed 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Stopping 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Stopped 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Removing 
+ Container required_effect__retained_deferred__handling_gap_replayable__standard_rep05-redis-1 Removed 
+ Network required_effect__retained_deferred__handling_gap_replayable__standard_rep05_default Removing 
+ Network required_effect__retained_deferred__handling_gap_replayable__standard_rep05_default Removed 

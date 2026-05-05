@@ -1,0 +1,4 @@
+scenario_id,boundary_type,configuration,family,severity,scenario_role,attainment_rate_mean,mean_time_to_attainment_seconds_mean,p95_time_to_attainment_seconds_mean,completed_in_time_rate_mean,expired_rate_mean,temporal_clustering_busiest_10pct_interval_share_100ms_mean,duplicate_delivery_rate_mean,duplicate_delivery_count_mean
+required_effect__retained_deferred__baseline__standard,required_effect,retained_deferred,baseline,standard,main_core,1.0,4.254302,7.03723,1.0,0.0,0.105,0.0,0.0
+required_effect__retained_immediate__baseline__standard,required_effect,retained_immediate,baseline,standard,main_core,1.0,3.889353,6.621557,1.0,0.0,0.1051,0.0,0.0
+required_effect__transient_immediate__baseline__standard,required_effect,transient_immediate,baseline,standard,main_core,1.0,3.785691,6.297964,1.0,0.0,0.0959,0.0,0.0

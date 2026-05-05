@@ -1,0 +1,538 @@
+[2026-04-20T08:22:36+02:00] COMPOSE_UP_SERVICES
+
+=== COMPOSE_UP_SERVICES ===
+COMMAND: compose -f /home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/compose/docker-compose.yml --project-name state_non_regression__retained_immediate__backlog_shock__standard_rep03 up -d --build redis consumer producer
+ Image state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer Building 
+ Image state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer Building 
+#1 [internal] load local bake definitions
+#1 reading from stdin 1.45kB done
+#1 DONE 0.0s
+
+#2 [consumer internal] load build definition from consumer.Dockerfile
+#2 transferring dockerfile:
+#2 transferring dockerfile: 204B done
+#2 DONE 0.6s
+
+#3 [producer internal] load build definition from producer.Dockerfile
+#3 transferring dockerfile: 204B 0.0s done
+#3 DONE 0.7s
+
+#4 [producer internal] load metadata for docker.io/library/python:3.11-slim
+#4 DONE 2.5s
+
+#5 [producer internal] load .dockerignore
+#5 DONE 0.0s
+
+#5 [producer internal] load .dockerignore
+#5 transferring context:
+#5 transferring context: 2B done
+#5 DONE 0.6s
+
+#6 [consumer 1/4] FROM docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf
+#6 resolve docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf
+#6 ...
+
+#7 [consumer internal] load build context
+#7 transferring context: 67B done
+#7 DONE 0.5s
+
+#8 [producer internal] load build context
+#8 transferring context: 67B done
+#8 DONE 0.6s
+
+#6 [consumer 1/4] FROM docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf
+#6 resolve docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf 0.9s done
+#6 resolve docker.io/library/python:3.11-slim@sha256:233de06753d30d120b1a3ce359d8d3be8bda78524cd8f520c99883bfe33964cf 0.9s done
+#6 DONE 0.9s
+
+#9 [producer 4/4] COPY docker/producer.py /app/producer.py
+#9 CACHED
+
+#10 [consumer 2/4] WORKDIR /app
+#10 CACHED
+
+#11 [consumer 3/4] RUN pip install --no-cache-dir redis==5.2.1
+#11 CACHED
+
+#12 [consumer 4/4] COPY docker/consumer.py /app/consumer.py
+#12 CACHED
+
+#13 [consumer] exporting to image
+#13 exporting layers done
+#13 writing image sha256:8066f39bf2ba9acdf57ec9bdc4c8d260c850499c69828823d07fb076aad98cf9 0.1s done
+#13 naming to docker.io/library/state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer
+#13 naming to docker.io/library/state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer 0.2s done
+#13 ...
+
+#14 [producer] exporting to image
+#14 exporting layers done
+#14 writing image sha256:f816fd2e61b68a075fdbcadc47bb38a4daf458e499e835890e8fd41d4ac1ff47 0.1s done
+#14 naming to docker.io/library/state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer 0.3s done
+#14 DONE 0.6s
+
+#13 [consumer] exporting to image
+#13 DONE 0.6s
+
+#15 [producer] resolving provenance for metadata file
+#15 DONE 0.0s
+
+#16 [consumer] resolving provenance for metadata file
+#16 DONE 0.0s
+ Image state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer Built 
+ Image state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer Built 
+ Network state_non_regression__retained_immediate__backlog_shock__standard_rep03_default Creating 
+ Network state_non_regression__retained_immediate__backlog_shock__standard_rep03_default Created 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Creating 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Created 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer-1 Creating 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer-1 Creating 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer-1 Created 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer-1 Created 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Starting 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Started 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Waiting 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Waiting 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Healthy 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer-1 Starting 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Healthy 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer-1 Starting 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer-1 Started 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer-1 Started 
+[2026-04-20T08:22:58+02:00] WAIT_FOR_PRODUCER_START
+path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__retained_immediate__backlog_shock__standard__rep03/artifacts/producer_started.json
+[2026-04-20T08:22:59+02:00] WAIT_FOR_PRODUCER_START_detected
+[2026-04-20T08:22:59+02:00] WAIT_FOR_PRODUCER_COMPLETION
+path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__retained_immediate__backlog_shock__standard__rep03/artifacts/producer_complete.json
+[2026-04-20T08:23:05+02:00] WAIT_FOR_PRODUCER_COMPLETION_detected
+[2026-04-20T08:23:05+02:00] WAIT_FOR_RUN_COMPLETION
+sentinel_path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__retained_immediate__backlog_shock__standard__rep03/artifacts/run_complete.json
+summary_path=/home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/output/batches/state_non_regression_backlog_spotcheck_evidence_tidyexp_round2_n10_2026-04-20_081514/raw_runs/state_non_regression__retained_immediate__backlog_shock__standard__rep03/logs/consumer_summary.json
+[2026-04-20T08:23:09+02:00] completion_detected
+[2026-04-20T08:23:09+02:00] COMPOSE_LOGS
+
+=== COMPOSE_LOGS ===
+COMMAND: compose -f /home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/compose/docker-compose.yml --project-name state_non_regression__retained_immediate__backlog_shock__standard_rep03 logs --no-color
+producer-1  | 2026-04-20T06:22:59 producer starting delivery_mode=retained boundary=state_non_regression event_count=300 disturbance=interruption start_delay=1.0
+producer-1  | 2026-04-20T06:23:00 producer state_obsolete_replay_selected entity_count=90 updates_per_entity=3
+producer-1  | 2026-04-20T06:23:05 producer finished produced_events=990 produced_cases=300
+redis-1     | 1:C 20 Apr 2026 06:22:54.894 # WARNING Memory overcommit must be enabled! Without it, a background save or replication may fail under low memory condition. Being disabled, it can also cause failures without low memory condition, see https://github.com/jemalloc/jemalloc/issues/1328. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+redis-1     | 1:C 20 Apr 2026 06:22:54.894 * oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+redis-1     | 1:C 20 Apr 2026 06:22:54.894 * Redis version=7.4.8, bits=64, commit=00000000, modified=0, pid=1, just started
+redis-1     | 1:C 20 Apr 2026 06:22:54.894 # Warning: no config file specified, using the default config. In order to specify a config file use redis-server /path/to/redis.conf
+redis-1     | 1:M 20 Apr 2026 06:22:54.895 * monotonic clock: POSIX clock_gettime
+redis-1     | 1:M 20 Apr 2026 06:22:54.896 * Running mode=standalone, port=6379.
+redis-1     | 1:M 20 Apr 2026 06:22:54.896 * Server initialized
+redis-1     | 1:M 20 Apr 2026 06:22:54.929 * Ready to accept connections tcp
+consumer-1  | 2026-04-20T06:22:59 consumer starting delivery_mode=retained enforcement_timing=immediate boundary=state_non_regression disturbance=interruption
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=0 version=3 attained=1
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=1 version=3 attained=2
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=2 version=3 attained=3
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=3 version=3 attained=4
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=4 version=3 attained=5
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=5 version=3 attained=6
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=6 version=3 attained=7
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=7 version=3 attained=8
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=8 version=3 attained=9
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=9 version=3 attained=10
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=10 version=3 attained=11
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=11 version=3 attained=12
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=12 version=3 attained=13
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=13 version=3 attained=14
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=14 version=3 attained=15
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=15 version=3 attained=16
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=16 version=3 attained=17
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=17 version=3 attained=18
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=18 version=3 attained=19
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=19 version=3 attained=20
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=20 version=3 attained=21
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=21 version=3 attained=22
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=22 version=3 attained=23
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=23 version=3 attained=24
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=24 version=3 attained=25
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=25 version=3 attained=26
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=26 version=3 attained=27
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=27 version=3 attained=28
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=28 version=3 attained=29
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=29 version=3 attained=30
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=30 version=3 attained=31
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=31 version=3 attained=32
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=32 version=3 attained=33
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=33 version=3 attained=34
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=34 version=3 attained=35
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=35 version=3 attained=36
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=36 version=3 attained=37
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=37 version=3 attained=38
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=38 version=3 attained=39
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=39 version=3 attained=40
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=40 version=3 attained=41
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=41 version=3 attained=42
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=42 version=3 attained=43
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=43 version=3 attained=44
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=44 version=3 attained=45
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=45 version=3 attained=46
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=46 version=3 attained=47
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=47 version=3 attained=48
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=48 version=3 attained=49
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=49 version=3 attained=50
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=50 version=3 attained=51
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=51 version=3 attained=52
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=52 version=3 attained=53
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=53 version=3 attained=54
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=54 version=3 attained=55
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=55 version=3 attained=56
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=56 version=3 attained=57
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=57 version=3 attained=58
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=58 version=3 attained=59
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=59 version=3 attained=60
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=60 version=3 attained=61
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=61 version=3 attained=62
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=62 version=3 attained=63
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=63 version=3 attained=64
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=64 version=3 attained=65
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=65 version=3 attained=66
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=66 version=3 attained=67
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=67 version=3 attained=68
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=68 version=3 attained=69
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=69 version=3 attained=70
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=70 version=3 attained=71
+consumer-1  | 2026-04-20T06:23:03 consumer latest_state_attained entity_id=71 version=3 attained=72
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=72 version=3 attained=73
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=73 version=3 attained=74
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=74 version=3 attained=75
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=75 version=3 attained=76
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=76 version=3 attained=77
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=77 version=3 attained=78
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=78 version=3 attained=79
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=79 version=3 attained=80
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=80 version=3 attained=81
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=81 version=3 attained=82
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=82 version=3 attained=83
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=83 version=3 attained=84
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=84 version=3 attained=85
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=85 version=3 attained=86
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=86 version=3 attained=87
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=87 version=3 attained=88
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=88 version=3 attained=89
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=89 version=3 attained=90
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=90 version=3 attained=91
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=91 version=3 attained=92
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=92 version=3 attained=93
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=93 version=3 attained=94
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=94 version=3 attained=95
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=95 version=3 attained=96
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=96 version=3 attained=97
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=97 version=3 attained=98
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=98 version=3 attained=99
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=99 version=3 attained=100
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=100 version=3 attained=101
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=101 version=3 attained=102
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=102 version=3 attained=103
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=103 version=3 attained=104
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=104 version=3 attained=105
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=105 version=3 attained=106
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=106 version=3 attained=107
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=107 version=3 attained=108
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=108 version=3 attained=109
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=109 version=3 attained=110
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=110 version=3 attained=111
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=111 version=3 attained=112
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=112 version=3 attained=113
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=113 version=3 attained=114
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=114 version=3 attained=115
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=115 version=3 attained=116
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=116 version=3 attained=117
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=117 version=3 attained=118
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=118 version=3 attained=119
+consumer-1  | 2026-04-20T06:23:04 consumer latest_state_attained entity_id=119 version=3 attained=120
+consumer-1  | 2026-04-20T06:23:04 consumer interruption_active mode=progress_fraction reason=progress_fraction>=0.8 duration=2.400
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=120 version=3 attained=121
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=121 version=3 attained=122
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=122 version=3 attained=123
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=123 version=3 attained=124
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=124 version=3 attained=125
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=125 version=3 attained=126
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=126 version=3 attained=127
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=127 version=3 attained=128
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=128 version=3 attained=129
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=129 version=3 attained=130
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=130 version=3 attained=131
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=131 version=3 attained=132
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=132 version=3 attained=133
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=133 version=3 attained=134
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=134 version=3 attained=135
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=135 version=3 attained=136
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=136 version=3 attained=137
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=137 version=3 attained=138
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=138 version=3 attained=139
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=139 version=3 attained=140
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=140 version=3 attained=141
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=141 version=3 attained=142
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=142 version=3 attained=143
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=143 version=3 attained=144
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=144 version=3 attained=145
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=145 version=3 attained=146
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=146 version=3 attained=147
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=147 version=3 attained=148
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=148 version=3 attained=149
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=149 version=3 attained=150
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=150 version=3 attained=151
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=151 version=3 attained=152
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=152 version=3 attained=153
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=153 version=3 attained=154
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=154 version=3 attained=155
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=155 version=3 attained=156
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=156 version=3 attained=157
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=157 version=3 attained=158
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=158 version=3 attained=159
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=159 version=3 attained=160
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=160 version=3 attained=161
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=161 version=3 attained=162
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=162 version=3 attained=163
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=163 version=3 attained=164
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=164 version=3 attained=165
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=165 version=3 attained=166
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=166 version=3 attained=167
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=167 version=3 attained=168
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=168 version=3 attained=169
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=169 version=3 attained=170
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=170 version=3 attained=171
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=171 version=3 attained=172
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=172 version=3 attained=173
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=173 version=3 attained=174
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=174 version=3 attained=175
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=175 version=3 attained=176
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=176 version=3 attained=177
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=177 version=3 attained=178
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=178 version=3 attained=179
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=179 version=3 attained=180
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=180 version=3 attained=181
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=181 version=3 attained=182
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=182 version=3 attained=183
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=183 version=3 attained=184
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=184 version=3 attained=185
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=185 version=3 attained=186
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=186 version=3 attained=187
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=187 version=3 attained=188
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=188 version=3 attained=189
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=189 version=3 attained=190
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=190 version=3 attained=191
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=191 version=3 attained=192
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=192 version=3 attained=193
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=193 version=3 attained=194
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=194 version=3 attained=195
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=195 version=3 attained=196
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=196 version=3 attained=197
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=197 version=3 attained=198
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=198 version=3 attained=199
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=199 version=3 attained=200
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=200 version=3 attained=201
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=201 version=3 attained=202
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=202 version=3 attained=203
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=203 version=3 attained=204
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=204 version=3 attained=205
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=205 version=3 attained=206
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=206 version=3 attained=207
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=207 version=3 attained=208
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=208 version=3 attained=209
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=209 version=3 attained=210
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=210 version=3 attained=211
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=211 version=3 attained=212
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=212 version=3 attained=213
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=213 version=3 attained=214
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=214 version=3 attained=215
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=215 version=3 attained=216
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=216 version=3 attained=217
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=217 version=3 attained=218
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=218 version=3 attained=219
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=219 version=3 attained=220
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=220 version=3 attained=221
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=221 version=3 attained=222
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=222 version=3 attained=223
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=223 version=3 attained=224
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=224 version=3 attained=225
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=225 version=3 attained=226
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=226 version=3 attained=227
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=227 version=3 attained=228
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=228 version=3 attained=229
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=229 version=3 attained=230
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=230 version=3 attained=231
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=231 version=3 attained=232
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=232 version=3 attained=233
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=233 version=3 attained=234
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=234 version=3 attained=235
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=235 version=3 attained=236
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=236 version=3 attained=237
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=237 version=3 attained=238
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=238 version=3 attained=239
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=239 version=3 attained=240
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=240 version=3 attained=241
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=241 version=3 attained=242
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=242 version=3 attained=243
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=243 version=3 attained=244
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=244 version=3 attained=245
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=245 version=3 attained=246
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=246 version=3 attained=247
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=247 version=3 attained=248
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=248 version=3 attained=249
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=249 version=3 attained=250
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=250 version=3 attained=251
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=251 version=3 attained=252
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=252 version=3 attained=253
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=253 version=3 attained=254
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=254 version=3 attained=255
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=255 version=3 attained=256
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=256 version=3 attained=257
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=257 version=3 attained=258
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=258 version=3 attained=259
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=259 version=3 attained=260
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=260 version=3 attained=261
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=261 version=3 attained=262
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=262 version=3 attained=263
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=263 version=3 attained=264
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=264 version=3 attained=265
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=265 version=3 attained=266
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=266 version=3 attained=267
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=267 version=3 attained=268
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=268 version=3 attained=269
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=269 version=3 attained=270
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=270 version=3 attained=271
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=271 version=3 attained=272
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=272 version=3 attained=273
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=273 version=3 attained=274
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=274 version=3 attained=275
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=275 version=3 attained=276
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=276 version=3 attained=277
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=277 version=3 attained=278
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=278 version=3 attained=279
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=279 version=3 attained=280
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=280 version=3 attained=281
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=281 version=3 attained=282
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=282 version=3 attained=283
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=283 version=3 attained=284
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=284 version=3 attained=285
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=285 version=3 attained=286
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=286 version=3 attained=287
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=287 version=3 attained=288
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=288 version=3 attained=289
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=289 version=3 attained=290
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=290 version=3 attained=291
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=291 version=3 attained=292
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=292 version=3 attained=293
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=293 version=3 attained=294
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=294 version=3 attained=295
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=295 version=3 attained=296
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=296 version=3 attained=297
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=297 version=3 attained=298
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=298 version=3 attained=299
+consumer-1  | 2026-04-20T06:23:06 consumer latest_state_attained entity_id=299 version=3 attained=300
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=2 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=5 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=8 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=9 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=10 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=15 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=19 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=25 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=26 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=28 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=31 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=39 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=43 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=46 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=51 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=52 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=56 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=62 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=65 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=69 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=70 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=71 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=75 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=83 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=85 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=89 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=90 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=97 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=104 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=105 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=107 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=108 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=110 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=112 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=116 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=122 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=125 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=130 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=132 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=133 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=135 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=136 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=137 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=152 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=154 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=155 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=157 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=159 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=166 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=172 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=174 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=175 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=178 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=181 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=185 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=186 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=188 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=194 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=197 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=204 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=206 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=207 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=213 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=219 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=221 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=223 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=228 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=229 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=230 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=232 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=238 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=239 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=241 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=245 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=246 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=247 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=256 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=260 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=261 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=263 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=266 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=267 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=270 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=274 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=278 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=279 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=283 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=286 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=289 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer obsolete_ignored entity_id=293 version=2 current=3
+consumer-1  | 2026-04-20T06:23:06 consumer producer_complete_seen emitted_hint=300 logical_hint=300 seen_elapsed=7.697059
+consumer-1  | 2026-04-20T06:23:08 consumer drain_complete processed=990 emitted_hint=300 logical_hint=300 quiet_for=2.090
+[2026-04-20T08:23:10+02:00] run_finished
+[2026-04-20T08:23:10+02:00] COMPOSE_DOWN
+
+=== COMPOSE_DOWN ===
+COMMAND: compose -f /home/h3rmano/iter/thesis_event_research/suites/supplementary_state/current_suite/compose/docker-compose.yml --project-name state_non_regression__retained_immediate__backlog_shock__standard_rep03 down -v --remove-orphans
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer-1 Stopping 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer-1 Stopping 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer-1 Stopped 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer-1 Removing 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer-1 Stopped 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer-1 Removing 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-producer-1 Removed 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-consumer-1 Removed 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Stopping 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Stopped 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Removing 
+ Container state_non_regression__retained_immediate__backlog_shock__standard_rep03-redis-1 Removed 
+ Network state_non_regression__retained_immediate__backlog_shock__standard_rep03_default Removing 
+ Network state_non_regression__retained_immediate__backlog_shock__standard_rep03_default Removed 

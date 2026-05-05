@@ -1,0 +1,13 @@
+scenario_id,configuration,family,severity,peak_salvageable_share,peak_critical_share,peak_doomed_share,integrated_salvageable_share_seconds,integrated_doomed_share_seconds,integrated_active_settlement_share_seconds,integrated_retained_backlog_share_seconds,backlog_dwell_fraction,active_payment_fraction,final_completed_in_time_total,final_expired_total,final_pending_cases,final_retained_backlog_cases
+deadline_constrained__retained_deferred__backlog_shock__standard,retained_deferred,backlog_shock,standard,0.990192,0.075865,0.443047,1.973653,1.429008,1.973653,0.0,0.0,1.0,512.5,487.5,0.0,0.0
+deadline_constrained__retained_deferred__baseline__standard,retained_deferred,baseline,standard,0.955534,0.0,0.0,0.642294,0.0,0.642294,0.0,0.0,1.0,1000.0,0.0,0.0,0.0
+deadline_constrained__retained_deferred__degradation__high,retained_deferred,degradation,high,1.0,0.219209,0.879,3.154279,3.963438,2.001354,1.222497,0.379204,0.620796,11.0,989.0,0.0,0.0
+deadline_constrained__retained_deferred__degradation__moderate,retained_deferred,degradation,moderate,1.0,0.165031,0.3635,3.036516,0.993964,2.097161,0.898121,0.299845,0.700155,148.0,852.0,0.0,0.0
+deadline_constrained__retained_immediate__backlog_shock__standard,retained_immediate,backlog_shock,standard,0.300932,0.075693,0.406174,0.898083,1.215197,0.03921,0.865583,0.956664,0.043336,706.5,293.5,0.0,0.0
+deadline_constrained__retained_immediate__baseline__standard,retained_immediate,baseline,standard,0.001073,0.0,0.0,0.000523,0.0,0.000523,0.0,0.0,1.0,1000.0,0.0,0.0,0.0
+deadline_constrained__retained_immediate__degradation__high,retained_immediate,degradation,high,0.882352,0.191573,0.842,3.060854,3.300327,1.87593,1.238097,0.397587,0.602413,27.0,973.0,0.0,0.0
+deadline_constrained__retained_immediate__degradation__moderate,retained_immediate,degradation,moderate,0.348366,0.074583,0.173,1.966616,0.2984,0.87495,0.844923,0.491271,0.508729,457.0,543.0,0.0,0.0
+deadline_constrained__transient_immediate__backlog_shock__standard,transient_immediate,backlog_shock,standard,0.305134,0.07715,0.404486,0.916216,1.213131,0.916216,0.0,0.0,1.0,703.0,297.0,0.0,0.0
+deadline_constrained__transient_immediate__baseline__standard,transient_immediate,baseline,standard,0.001025,0.0,0.0,0.000388,0.0,0.000388,0.0,0.0,1.0,1000.0,0.0,0.0,0.0
+deadline_constrained__transient_immediate__degradation__high,transient_immediate,degradation,high,0.882682,0.188953,0.855,3.073257,3.197682,3.073257,0.0,0.0,1.0,27.0,973.0,0.0,0.0
+deadline_constrained__transient_immediate__degradation__moderate,transient_immediate,degradation,moderate,0.348793,0.084243,0.198,1.933498,0.420656,1.933498,0.0,0.0,1.0,401.0,599.0,0.0,0.0

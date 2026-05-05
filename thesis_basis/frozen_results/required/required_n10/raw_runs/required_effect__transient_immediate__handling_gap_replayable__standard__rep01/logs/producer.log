@@ -1,0 +1,2 @@
+2026-04-20T07:01:06 producer starting delivery_mode=transient boundary=required_effect event_count=1000 disturbance=interruption start_delay=1.0
+2026-04-20T07:01:12 producer finished produced_events=1000 produced_cases=1000

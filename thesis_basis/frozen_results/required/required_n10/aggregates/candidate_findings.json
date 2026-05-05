@@ -1,0 +1,123 @@
+[
+  {
+    "label": "Synchronized lateness leader",
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__extreme",
+    "family": "duplicate_pressure",
+    "severity": "extreme",
+    "configuration": "transient_immediate",
+    "finding": "This scenario most strongly shifts much of the recovery curve later together.",
+    "role": "mixed",
+    "role_label": "mixed burden pattern",
+    "explanation": "duplicate pressure (extreme) currently reads mainly as mixed burden pattern. This scenario most strongly shifts much of the recovery curve later together."
+  },
+  {
+    "label": "Concentration leader",
+    "scenario_id": "required_effect__retained_immediate__handling_gap_replayable__standard",
+    "family": "handling_gap_replayable",
+    "severity": "standard",
+    "configuration": "retained_immediate",
+    "finding": "This scenario most strongly converts disturbance into concentrated catch-up behaviour.",
+    "role": "concentration-dominant",
+    "role_label": "catch-up surge recovery",
+    "explanation": "handling-gap replayable omission currently reads mainly as catch-up surge recovery. This scenario most strongly converts disturbance into concentrated catch-up behaviour."
+  },
+  {
+    "label": "Convergence-region leader",
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__extreme",
+    "family": "duplicate_pressure",
+    "severity": "extreme",
+    "configuration": "transient_immediate",
+    "finding": "This scenario most strongly displaces the late-convergence region relative to the early or main bulk.",
+    "role": "mixed",
+    "role_label": "mixed burden pattern",
+    "explanation": "duplicate pressure (extreme) currently reads mainly as mixed burden pattern. This scenario most strongly displaces the late-convergence region relative to the early or main bulk."
+  },
+  {
+    "label": "Upper-bulk displacement leader",
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__extreme",
+    "family": "duplicate_pressure",
+    "severity": "extreme",
+    "configuration": "transient_immediate",
+    "finding": "This scenario most strongly shifts the upper bulk / late recovery body.",
+    "role": "mixed",
+    "role_label": "mixed burden pattern",
+    "explanation": "duplicate pressure (extreme) currently reads mainly as mixed burden pattern. This scenario most strongly shifts the upper bulk / late recovery body."
+  },
+  {
+    "label": "Tail-sensitive candidate",
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__extreme",
+    "family": "duplicate_pressure",
+    "severity": "extreme",
+    "configuration": "transient_immediate",
+    "finding": "This scenario is the strongest current candidate for a true tail-stretch effect, though it should be read alongside convergence-region signals.",
+    "role": "mixed",
+    "role_label": "mixed burden pattern",
+    "explanation": "duplicate pressure (extreme) currently reads mainly as mixed burden pattern. This scenario is the strongest current candidate for a true tail-stretch effect, though it should be read alongside convergence-region signals."
+  },
+  {
+    "label": "Straggler-sensitive candidate",
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__extreme",
+    "family": "duplicate_pressure",
+    "severity": "extreme",
+    "configuration": "transient_immediate",
+    "finding": "This scenario most strongly affects the strict straggler window (95\u219299).",
+    "role": "mixed",
+    "role_label": "mixed burden pattern",
+    "explanation": "duplicate pressure (extreme) currently reads mainly as mixed burden pattern. This scenario most strongly affects the strict straggler window (95\u219299)."
+  },
+  {
+    "label": "Upper-bulk shift leader",
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__extreme",
+    "family": "duplicate_pressure",
+    "severity": "extreme",
+    "configuration": "transient_immediate",
+    "finding": "This scenario most strongly shifts the upper bulk later in the recovery episode.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "duplicate pressure (extreme) currently reads mainly as n/a. This scenario most strongly shifts the upper bulk later in the recovery episode."
+  },
+  {
+    "label": "Convergence-region shift leader",
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__extreme",
+    "family": "duplicate_pressure",
+    "severity": "extreme",
+    "configuration": "transient_immediate",
+    "finding": "This scenario most strongly shifts the late-convergence region later in the recovery episode.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "duplicate pressure (extreme) currently reads mainly as n/a. This scenario most strongly shifts the late-convergence region later in the recovery episode."
+  },
+  {
+    "label": "Straggler-region shift leader",
+    "scenario_id": "required_effect__transient_immediate__duplicate_pressure__extreme",
+    "family": "duplicate_pressure",
+    "severity": "extreme",
+    "configuration": "transient_immediate",
+    "finding": "This scenario most strongly shifts the strict straggler region later.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "duplicate pressure (extreme) currently reads mainly as n/a. This scenario most strongly shifts the strict straggler region later."
+  },
+  {
+    "label": "Upper-bulk compression leader",
+    "scenario_id": "required_effect__retained_immediate__handling_gap_replayable__extreme",
+    "family": "handling_gap_replayable",
+    "severity": "extreme",
+    "configuration": "retained_immediate",
+    "finding": "This scenario most strongly compresses the upper bulk while shifting the broader curve.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "handling-gap replayable omission (extreme) currently reads mainly as n/a. This scenario most strongly compresses the upper bulk while shifting the broader curve."
+  },
+  {
+    "label": "Late-region compression leader",
+    "scenario_id": "required_effect__retained_immediate__handling_gap_replayable__extreme",
+    "family": "handling_gap_replayable",
+    "severity": "extreme",
+    "configuration": "retained_immediate",
+    "finding": "This scenario most strongly compresses the late-convergence region while still shifting it later overall.",
+    "role": null,
+    "role_label": "n/a",
+    "explanation": "handling-gap replayable omission (extreme) currently reads mainly as n/a. This scenario most strongly compresses the late-convergence region while still shifting it later overall."
+  }
+]

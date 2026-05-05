@@ -1,0 +1,10 @@
+{
+  "status": "complete",
+  "produced_event_count": 1000,
+  "duration_seconds": 5.702796,
+  "delivery_mode": "retained",
+  "scenario_seed": 7008,
+  "skewed_tail_delayed_case_count": 0,
+  "boundary": "deadline_constrained",
+  "deadline_window_seconds": 1.2
+}

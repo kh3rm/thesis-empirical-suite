@@ -1,0 +1,22 @@
+{
+  "profile_name": "required_targeted_validation_n10",
+  "profile_version": "8.1",
+  "suite_role": "supporting",
+  "run_mode": "evidence",
+  "repeat_count": 10,
+  "plot_default": false,
+  "seed": 9931,
+  "boundary_types": [
+    "required_effect"
+  ],
+  "scenario_files": [
+    "scenarios/required/handling_gap_replayable_tidyexp_round1/required_effect__transient_immediate__handling_gap_replayable__extreme.json",
+    "scenarios/required/duplicate_pressure/required_effect__retained_deferred__duplicate_pressure__extreme.json"
+  ],
+  "notes": "Focused rerun of the required-effect cells that drifted in the first full-package confirmation.",
+  "experiment_tag": "targeted_validation_n10",
+  "experiment_notes": [
+    "Transient handling-gap extreme is the main load-sensitive transient replayability cell.",
+    "Retained/deferred duplicate-pressure extreme is the main deferred cost cell that shifted in the first rerun."
+  ]
+}

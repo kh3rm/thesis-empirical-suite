@@ -1,0 +1,29 @@
+{
+  "profile_name": "main_research_core_deadline_retained_timing_validated_tidyexp_round3_n10",
+  "batch_dir": "/home/h3rmano/iter/thesis_event_research/suites/main_core/current_suite/output/batches/main_research_core_deadline_retained_timing_validated_tidyexp_round3_n10_2026-04-20_065843",
+  "repeat_count": 10,
+  "boundary_types": [
+    "deadline_constrained"
+  ],
+  "plot_default": true,
+  "scenario_file_count": 12,
+  "scenarios": [
+    "scenarios/deadline_constrained/baseline/deadline_constrained__transient_immediate__baseline__standard.json",
+    "scenarios/deadline_constrained/baseline/deadline_constrained__retained_immediate__baseline__standard.json",
+    "scenarios/deadline_constrained/baseline/deadline_constrained__retained_deferred__baseline__standard.json",
+    "scenarios/deadline_constrained/degradation_moderate8/deadline_constrained__transient_immediate__degradation__moderate.json",
+    "scenarios/deadline_constrained/degradation_moderate8/deadline_constrained__retained_immediate__degradation__moderate.json",
+    "scenarios/deadline_constrained/degradation_moderate8/deadline_constrained__retained_deferred__degradation__moderate.json",
+    "scenarios/deadline_constrained/degradation/deadline_constrained__transient_immediate__degradation__high.json",
+    "scenarios/deadline_constrained/degradation/deadline_constrained__retained_immediate__degradation__high.json",
+    "scenarios/deadline_constrained/degradation/deadline_constrained__retained_deferred__degradation__high.json",
+    "scenarios/deadline_constrained/backlog_shock_preflight/deadline_constrained__transient_immediate__backlog_shock__standard.json",
+    "scenarios/deadline_constrained/backlog_shock_preflight/deadline_constrained__retained_immediate__backlog_shock__standard.json",
+    "scenarios/deadline_constrained/backlog_shock_preflight/deadline_constrained__retained_deferred__backlog_shock__standard.json"
+  ],
+  "seed": 7000,
+  "selected_deadline_window_seconds": 1.2,
+  "deadline_window_override_seconds": null,
+  "deadline_candidates_seconds": null,
+  "deadline_calibration_profile": false
+}

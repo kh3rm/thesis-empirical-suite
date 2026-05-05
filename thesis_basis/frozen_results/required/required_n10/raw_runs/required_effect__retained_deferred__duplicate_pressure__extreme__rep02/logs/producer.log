@@ -1,0 +1,3 @@
+2026-04-20T06:56:54 producer starting delivery_mode=retained boundary=required_effect event_count=1000 disturbance=duplicate_pressure start_delay=1.0
+2026-04-20T06:56:55 producer duplicate_pressure_selected duplicate_case_count=700 duplicate_delay_ms=1 duplicate_repeats=2 duplicate_jitter_ms=2 mode=selected_cases_twice
+2026-04-20T06:57:04 producer finished produced_events=1000 produced_cases=1000

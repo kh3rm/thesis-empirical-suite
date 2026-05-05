@@ -1,0 +1,7 @@
+{
+  "run_id": "deadline_constrained__retained_deferred__degradation__moderate__rep05",
+  "project_name": "deadline_constrained__retained_deferred__degradation__moderate_rep05",
+  "started_at": "2026-04-20T07:30:21+02:00",
+  "host_run_dir": "/home/h3rmano/iter/thesis_event_research/suites/main_core/current_suite/output/batches/main_research_core_deadline_retained_timing_validated_tidyexp_round3_n10_2026-04-20_065843/raw_runs/deadline_constrained__retained_deferred__degradation__moderate__rep05",
+  "runtime_env_file": "/home/h3rmano/iter/thesis_event_research/suites/main_core/current_suite/output/batches/main_research_core_deadline_retained_timing_validated_tidyexp_round3_n10_2026-04-20_065843/raw_runs/deadline_constrained__retained_deferred__degradation__moderate__rep05/scenario.env"
+}

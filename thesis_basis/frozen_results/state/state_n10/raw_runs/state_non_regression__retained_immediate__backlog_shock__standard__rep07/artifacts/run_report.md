@@ -1,0 +1,21 @@
+# Run report
+
+- boundary: state_non_regression
+- delivery_mode: retained
+- enforcement_timing: immediate
+- disturbance: interruption
+- status: complete
+- produced_case_count: 300
+- produced_case_count_emitted: 300
+- received_event_count: 990
+- attained_case_count: 300
+- unattained_case_count: 0
+- state_latest_version_attainment_rate: 1.0
+- state_latest_version_omission_rate: 0.0
+- state_obsolete_suppression_count: 90
+- state_same_version_duplicate_count: 0
+- duplicate_delivery_count: 0
+- duplicate_side_effect_execution_count: 0
+- correction_rewrite_count: 0
+- wrong_latest_version_commit_count: 90
+- observation_window_expired: False
