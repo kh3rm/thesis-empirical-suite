@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="280" viewBox="0 0 1100 280" role="img" aria-labelledby="title subtitle">
+  <title id="title">Reliability in Event-Driven Design</title>
+  <desc id="subtitle">How Correctness Boundaries Shape Process-Handling Choices and Recovery Behaviour</desc>
+  <rect width="1100" height="280" fill="#ffffff"/>
+  <text
+    x="550"
+    y="92"
+    text-anchor="middle"
+    font-family="Baskerville, Georgia, 'Times New Roman', serif"
+    font-size="58"
+    fill="#111111">
+    Reliability in Event-Driven Design
+  </text>
+  <text
+    x="550"
+    y="165"
+    text-anchor="middle"
+    font-family="Baskerville, Georgia, 'Times New Roman', serif"
+    font-size="34"
+    fill="#111111">
+    <tspan x="550" dy="0">How Correctness Boundaries Shape Process-Handling</tspan>
+    <tspan x="550" dy="38">Choices and Recovery Behaviour</tspan>
+  </text>
+</svg>
