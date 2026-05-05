@@ -4,8 +4,6 @@
   </a>
 </p>
 
-Companion repository for the thesis.
-
 Canonical runnable suites and frozen thesis basis for the empirical chapters.
 
 This repository contains the canonical runnable suites, the frozen thesis results, the thesis-used figures, and the thesis PDF.
